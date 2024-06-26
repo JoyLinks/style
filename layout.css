@@ -948,81 +948,6 @@
 	margin: calc(var(--space) * 2);
 }
 
-.fm {
-	/*流动间隔，1级，较宽*/
-	margin: calc(var(--space) / -2);
-}
-
-.fm>* {
-	margin: calc(var(--space) / 2);
-}
-
-.fm.box-f2>* {
-	flex-basis: calc(50% - var(--space));
-}
-
-.fm.box-f3>* {
-	flex-basis: calc(33.333% - var(--space) * 2);
-}
-
-.fm.box-f4>* {
-	flex-basis: calc(25% - var(--space) * 3);
-}
-
-.fm.box-f5>* {
-	flex-basis: calc(20% - var(--space) * 4);
-}
-
-.fms {
-	/*流动间隔，2级，较窄*/
-	margin: calc(var(--space) / -4);
-}
-
-.fms>* {
-	margin: calc(var(--space) / 4);
-}
-
-.fms.box-f2>* {
-	flex-basis: calc(50% - var(--space) / 2);
-}
-
-.fms.box-f3>* {
-	flex-basis: calc(33.333% - var(--space) / 2);
-}
-
-.fms.box-f4>* {
-	flex-basis: calc(25% - var(--space) / 2);
-}
-
-.fms.box-f5>* {
-	flex-basis: calc(20% - var(--space) / 2);
-}
-
-.fmm {
-	/*流动间隔，3级，1px*/
-	margin: -1px;
-}
-
-.fmm>* {
-	margin: 1px;
-}
-
-.fmm.box-f2>* {
-	flex-basis: calc(50% - 2);
-}
-
-.fmm.box-f3>* {
-	flex-basis: calc(33.333% - 2);
-}
-
-.fmm.box-f4>* {
-	flex-basis: calc(25% - 2);
-}
-
-.fmm.box-f5>* {
-	flex-basis: calc(20% - 2);
-}
-
 /*
 填充空间
 */
@@ -1135,44 +1060,41 @@
 
 /*图像*/
 
-.p16 {
-	width: 1rem;
-	height: 1rem;
+img {
+	max-width: 100%;
+	/*修正img底部空白*/
+	vertical-align: middle;
 }
 
-.p24 {
-	width: 1.5rem;
-	height: 1.5rem;
-}
-
-.p32 {
+img.q1 {
+	/*square 32px*/
 	width: 2rem;
 	height: 2rem;
 }
 
-.p40 {
-	width: 2.5rem;
-	height: 2.5rem;
+/*遮罩*/
+
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999999;
+	/*半透明*/
+	background-color: rgba(00, 00, 0, 0.5);
+	/*模糊*/
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	-moz-backdrop-filter: blur(16px);
+	-ms-backdrop-filter: blur(16px);
 }
 
-.p48 {
-	width: 3rem;
-	height: 3rem;
-}
-
-.p56 {
-	width: 3.5rem;
-	height: 3.5rem;
-}
-
-.p64 {
-	width: 4rem;
-	height: 4rem;
-}
-
-.p84 {
-	width: 5.25rem;
-	height: 5.25rem;
+.mask>* {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*隐藏*/
