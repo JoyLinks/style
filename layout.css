@@ -1,0 +1,1183 @@
+:root {
+	/*默认线条*/
+	--line: 1px;
+	/*盒子布局主间隔*/
+	--space: 1rem;
+}
+
+/*
+布局
+横向：h(horizontal)
+纵向：v(vertical)
+层叠：s(stack)
+分栏：c(column)
+*/
+
+.h,
+.horizontal {
+	/*横向布局，内容满铺*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.ht,
+.horizontal-top {
+	/*横向布局，内容靠上*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.hc,
+.horizontal-center {
+	/*横向布局，内容居中*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.hb,
+.horizontal-bottom {
+	/*横向布局，内容靠下*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.w,
+.wrap {
+	flex-wrap: wrap;
+}
+
+.h>.g,
+.h>.grow,
+.horizontal>.g,
+.horizontal>.grow,
+.ht>.g,
+.ht>.grow,
+.horizontal-top>.g,
+.horizontal-top>.grow,
+.hc>.g,
+.hc>.grow,
+.horizontal-center>.g,
+.horizontal-center>.grow,
+.hb>.g,
+.hb>.grow,
+.horizontal-bottom>.g,
+.horizontal-bottom>.grow {
+	/*横向布局，横向增长*/
+	flex-grow: 100;
+	overflow: hidden;
+	width: 1%;
+}
+
+.h>hr,
+.horizontal>hr,
+.ht>hr,
+.horizontal-top>hr,
+.hc>hr,
+.horizontal-center>hr,
+.hb>hr,
+.horizontal-bottom>hr {
+	/*横向布局，分隔线*/
+	width: var(--line);
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.v,
+.vertical {
+	/*纵向布局，内容满铺*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.vl,
+.vertical-left {
+	/*纵向布局，内容靠左*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.vc,
+.vertical-center {
+	/*纵向布局，内容居中*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.vr,
+.vertical-right {
+	/*纵向布局，内容靠右*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.v>.g,
+.v>.grow,
+.vertical>.g,
+.vertical>.grow,
+.vl>.g,
+.vl>.grow,
+.vertical-left>.g,
+.vertical-left>.grow,
+.vc>.g,
+.vc>.grow,
+.vertical-center>.g,
+.vertical-center>.grow,
+.vr>.g,
+.vr>.grow,
+.vertical-right>.g,
+.vertical-right>.grow {
+	/*纵向布局，纵向增长*/
+	flex-grow: 100;
+	overflow: hidden;
+	height: 1%;
+}
+
+.v>hr,
+.vertical>hr,
+.vl>hr,
+.vertical-left>hr,
+.vc>hr,
+.vertical-center>hr,
+.vr>hr,
+.vertical-right>hr {
+	/*纵向布局，分隔线*/
+	border: none;
+	height: var(--line);
+	padding: 0;
+	margin: 0;
+}
+
+.s,
+.stack {
+	/*层叠布局*/
+	position: relative;
+}
+
+.s>*,
+.stack>* {
+	position: absolute;
+}
+
+.s>.f,
+.s>.fill,
+.s>.full {
+	/*层叠布局，内容满铺*/
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.s>.cm,
+.s>.center-middle {
+	/*层叠布局，内容居中*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.s>.t,
+.s>.top {
+	/*层叠布局，内容顶铺*/
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.s>.tl,
+.s>.top-left,
+.s>.lt,
+.s>.left-top {
+	/*层叠布局，内容顶左*/
+	top: 0;
+	left: 0;
+}
+
+.s>.tc,
+.s>.top-center,
+.s>.ct,
+.s>.center-top {
+	/*层叠布局，内容顶中*/
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.s>.tr,
+.s>.top-right,
+.s>.rt,
+.s>.right-top {
+	/*层叠布局，内容顶右*/
+	top: 0;
+	right: 0;
+}
+
+.s>.l,
+.s>.left {
+	/*层叠布局，内容左铺*/
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.s>.lt,
+.s>.left-top,
+.s>.tl,
+.s>.top-left {
+	/*层叠布局，内容左上*/
+	top: 0;
+	left: 0;
+}
+
+.s>.lc,
+.s>.left-center,
+.s>.cl,
+.s>.center-left {
+	/*层叠布局，内容左中*/
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.s>.lb,
+.s>.left-bottom,
+.s>.bl,
+.s>.bottom-left {
+	/*层叠布局，内容左下*/
+	left: 0;
+	bottom: 0;
+}
+
+.s>.r,
+.s>.right {
+	/*层叠布局，内容右铺*/
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.s>.rt,
+.s>.right-top,
+.s>.tr,
+.s>.top-right {
+	/*层叠布局，内容右上*/
+	top: 0;
+	right: 0;
+}
+
+.s>.rc,
+.s>.right-center,
+.s>.cr,
+.s>.center-right {
+	/*层叠布局，内容右中*/
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.s>.rb,
+.s>.right-bottom,
+.s>.br,
+.s>.bottom-right {
+	/*层叠布局，内容右下*/
+	right: 0;
+	bottom: 0;
+}
+
+.s>.b,
+.s>.bottom {
+	/*层叠布局，内容底铺*/
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.s>.bl,
+.s>.bottom-left,
+.s>.lb,
+.s>.left-bottom {
+	/*层叠布局，内容底左*/
+	left: 0;
+	bottom: 0;
+}
+
+.s>.bc,
+.s>.bottom-center,
+.s>.cb,
+.s>.center-bottom {
+	/*层叠布局，内容底中*/
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+.s>.br,
+.s>.bottom-right,
+.s>.rb,
+.s>.right-bottom {
+	/*层叠布局，内容底右*/
+	right: 0;
+	bottom: 0;
+}
+
+.c,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.column,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6 {
+	/*分栏*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.c>*,
+.column>* {
+	box-sizing: border-box;
+	flex-grow: 0;
+}
+
+.c2>*,
+.column-2>* {
+	/*分栏，2栏*/
+	box-sizing: border-box;
+	/*flex-basis: calc(50%);
+	flex-grow: 0;*/
+	width: calc(50%);
+}
+
+.c3>*,
+.column-3>* {
+	/*分栏，3栏*/
+	box-sizing: border-box;
+	/*fflex-basis: calc(33.3333%);
+	flex-grow: 0;*/
+	width: calc(33.333333%);
+}
+
+.c4>*,
+.column-4>* {
+	/*分栏，4栏*/
+	box-sizing: border-box;
+	/*fflex-basis: calc(25%);
+	flex-grow: 0;*/
+	width: calc(25%);
+}
+
+.c5>*,
+.column-5>* {
+	/*分栏，5栏*/
+	box-sizing: border-box;
+	/*fflex-basis: calc(20%);
+	flex-grow: 0;*/
+	width: calc(20%);
+}
+
+.c6>*,
+.column-6>* {
+	/*分栏，6栏*/
+	box-sizing: border-box;
+	/*fflex-basis: calc(20%);
+	flex-grow: 0;*/
+	width: calc(16.666666%);
+}
+
+/*布局辅助*/
+
+.w0,
+.width-0 {
+	flex-basis: 0;
+	width: 0;
+}
+
+.w5,
+.width-5 {
+	flex-basis: 5%;
+	width: 5%;
+}
+
+.w10,
+.width-10 {
+	flex-basis: 10%;
+	width: 10%;
+}
+
+.w15,
+.width-15 {
+	flex-basis: 15%;
+	width: 15%;
+}
+
+.w20,
+.width-20 {
+	flex-basis: 20%;
+	width: 20%;
+}
+
+.w25,
+.width-25 {
+	flex-basis: 25%;
+	width: 25%;
+}
+
+.w30,
+.width-30 {
+	flex-basis: 30%;
+	width: 30%;
+}
+
+.w35,
+.width-35 {
+	flex-basis: 35%;
+	width: 35%;
+}
+
+.w40,
+.width-40 {
+	flex-basis: 40%;
+	width: 40%;
+}
+
+.w45,
+.width-45 {
+	flex-basis: 45%;
+	width: 45%;
+}
+
+.w50,
+.width-50 {
+	flex-basis: 50%;
+	width: 50%;
+}
+
+.w55,
+.width-55 {
+	flex-basis: 55%;
+	width: 55%;
+}
+
+.w60,
+.width-60 {
+	flex-basis: 60%;
+	width: 60%;
+}
+
+.w65,
+.width-65 {
+	flex-basis: 65%;
+	width: 65%;
+}
+
+.w70,
+.width-70 {
+	flex-basis: 70%;
+	width: 70%;
+}
+
+.w75,
+.width-75 {
+	flex-basis: 75%;
+	width: 75%;
+}
+
+.w80,
+.width-80 {
+	flex-basis: 80%;
+	width: 80%;
+}
+
+.w85,
+.width-85 {
+	flex-basis: 85%;
+	width: 85%;
+}
+
+.w90,
+.width-90 {
+	flex-basis: 90%;
+	width: 90%;
+}
+
+.w95,
+.width-95 {
+	flex-basis: 95%;
+	width: 95%;
+}
+
+.w100,
+.width-100 {
+	flex-basis: 100%;
+	width: 100%;
+}
+
+.w61,
+.width-61 {
+	flex-basis: 61.8%;
+	width: 61.8%;
+}
+
+.w38,
+.width-38 {
+	flex-basis: 38.2%;
+	width: 38.2%;
+}
+
+.h0,
+.height-0 {
+	flex-basis: 0;
+	height: 0;
+}
+
+.h5,
+.height-5 {
+	flex-basis: 5%;
+	height: 5%;
+}
+
+.h10,
+.height-10 {
+	flex-basis: 10%;
+	height: 10%;
+}
+
+.h15,
+.height-15 {
+	flex-basis: 15%;
+	height: 15%;
+}
+
+.h20,
+.height-20 {
+	flex-basis: 20%;
+	height: 20%;
+}
+
+.h25,
+.height-25 {
+	flex-basis: 25%;
+	height: 25%;
+}
+
+.h30,
+.height-30 {
+	flex-basis: 30%;
+	height: 30%;
+}
+
+.h35,
+.height-35 {
+	flex-basis: 35%;
+	height: 35%;
+}
+
+.h40,
+.height-40 {
+	flex-basis: 40%;
+	height: 40%;
+}
+
+.h45,
+.height-45 {
+	flex-basis: 45%;
+	height: 45%;
+}
+
+.h50,
+.height-50 {
+	flex-basis: 50%;
+	height: 50%;
+}
+
+.h55,
+.height-55 {
+	flex-basis: 55%;
+	height: 55%;
+}
+
+.h60,
+.height-60 {
+	flex-basis: 60%;
+	height: 60%;
+}
+
+.h65,
+.height-65 {
+	flex-basis: 65%;
+	height: 65%;
+}
+
+.h70,
+.height-70 {
+	flex-basis: 70%;
+	height: 70%;
+}
+
+.h75,
+.height-75 {
+	flex-basis: 75%;
+	height: 75%;
+}
+
+.h80,
+.height-80 {
+	flex-basis: 80%;
+	height: 80%;
+}
+
+.h85,
+.height-85 {
+	flex-basis: 85%;
+	height: 85%;
+}
+
+.h90,
+.height-90 {
+	flex-basis: 90%;
+	height: 90%;
+}
+
+.h95,
+.height-95 {
+	flex-basis: 95%;
+	height: 95%;
+}
+
+.h100,
+.height-100 {
+	flex-basis: 100%;
+	height: 100%;
+}
+
+.h61,
+.height-61 {
+	flex-basis: 61.8%;
+	height: 61.8%;
+}
+
+.h38,
+.height-38 {
+	flex-basis: 61.8%;
+	height: 61.8%;
+}
+
+/*间隔*/
+
+.m0,
+.margin-0 {
+	margin: 0;
+}
+
+.m1,
+.margin-1 {
+	margin: 1px;
+}
+
+.ma,
+.margin-auto {
+	margin: auto;
+}
+
+.ms,
+.margin-small {
+	margin: calc(var(--space) / 2);
+}
+
+.mm,
+.margin-medium {
+	margin: var(--space);
+}
+
+.ml,
+.margin-large {
+	margin: calc(var(--space) * 2);
+}
+
+.mx,
+.margin-extra {
+	margin: calc(var(--space) * 4);
+}
+
+/*横向布局间隔*/
+
+.hm0,
+.horizontal-margin-0 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.hm1,
+.horizontal-margin-1 {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.hma,
+.horizontal-margin-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hms,
+.horizontal-margin-small {
+	margin-left: calc(var(--space) / 2);
+	margin-right: calc(var(--space) / 2);
+}
+
+.hmm,
+.horizontal-margin-medium {
+	margin-left: var(--space);
+	margin-right: var(--space);
+}
+
+.hml,
+.horizontal-margin-large {
+	margin-left: calc(var(--space) * 2);
+	margin-right: calc(var(--space) * 2);
+}
+
+.hmx,
+.horizontal-margin-extra {
+	margin-left: calc(var(--space) * 4);
+	margin-right: calc(var(--space) * 4);
+}
+
+.hm0>:first-child,
+.horizontal-margin-0>:first-child,
+.hm1>:first-child,
+.horizontal-margin-1>:first-child,
+.hma>:first-child,
+.horizontal-margin-auto>:first-child,
+.hms>:first-child,
+.horizontal-margin-small>:first-child,
+.hmm>:first-child,
+.horizontal-margin-medium>:first-child,
+.hml>:first-child,
+.horizontal-margin-large>:first-child,
+.hmx>:first-child,
+.horizontal-margin-extra>:first-child {
+	margin-left: 0;
+}
+
+.hm0>:last-child,
+.horizontal-margin-0>:last-child,
+.hm1>:last-child,
+.horizontal-margin-1>:last-child,
+.hma>:last-child,
+.horizontal-margin-auto>:last-child,
+.hms>:last-child,
+.horizontal-margin-small>:last-child,
+.hmm>:last-child,
+.horizontal-margin-medium>:last-child,
+.hml>:last-child,
+.horizontal-margin-large>:last-child,
+.hmx>:last-child,
+.horizontal-margin-extra>:last-child {
+	margin-right: 0;
+}
+
+/*纵向间隔*/
+
+.vm0,
+.vertical-margin-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vm1,
+.vertical-margin-1 {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.vma,
+.vertical-margin-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.vms,
+.vertical-margin-small {
+	margin-top: calc(var(--space) / 2);
+	margin-bottom: calc(var(--space) / 2);
+}
+
+.vmm,
+.vertical-margin-medium {
+	margin-top: var(--space);
+	margin-bottom: var(--space);
+}
+
+.vml,
+.vertical-margin-large {
+	margin-top: calc(var(--space) * 2);
+	margin-bottom: calc(var(--space) * 2);
+}
+
+.vmx,
+.vertical-margin-extra {
+	margin-top: calc(var(--space) * 4);
+	margin-bottom: calc(var(--space) * 4);
+}
+
+.vm0>:first-child,
+.vertical-margin-0>:first-child,
+.vm1>:first-child,
+.vertical-margin-1>:first-child,
+.vma>:first-child,
+.vertical-margin-auto>:first-child,
+.vms>:first-child,
+.vertical-margin-small>:first-child,
+.vmm>:first-child,
+.vertical-margin-medium>:first-child,
+.vml>:first-child,
+.vertical-margin-large>:first-child,
+.vmx>:first-child,
+.vertical-margin-extra>:first-child {
+	margin-top: 0;
+}
+
+.vm0>:last-child,
+.vertical-margin-0>:last-child,
+.vm1>:last-child,
+.vertical-margin-1>:last-child,
+.vma>:last-child,
+.vertical-margin-auto>:last-child,
+.vms>:last-child,
+.vertical-margin-small>:last-child,
+.vmm>:last-child,
+.vertical-margin-medium>:last-child,
+.vml>:last-child,
+.vertical-margin-large>:last-child,
+.vmx>:last-child,
+.vertical-margin-extra>:last-child {
+	margin-bottom: 0;
+}
+
+/*分栏间隔*/
+
+.cm0,
+.column-margin-0 {
+	margin: 0;
+}
+
+.cm0>*,
+.column-margin-0>* {
+	margin: 0;
+}
+
+.cm1,
+.column-margin-1 {
+	margin: 1px;
+}
+
+.cm1>*,
+.column-margin-1>* {
+	margin: 1px;
+}
+
+.cma,
+.column-margin-auto {
+	margin: auto;
+}
+
+.cma>*,
+.column-margin-auto>* {
+	margin: auto;
+}
+
+.cms,
+.column-margin-small {
+	margin: calc(var(--space) / 4);
+}
+
+.cms>*,
+.column-margin-small>* {
+	margin: calc(var(--space) / 4);
+}
+
+.cmm,
+.column-margin-medium {
+	margin: calc(var(--space) / 2);
+}
+
+.cmm>*,
+.column-margin-medium>* {
+	margin: calc(var(--space) / 2);
+}
+
+.cml,
+.column-margin-large {
+	margin: calc(var(--space) * 1);
+}
+
+.cml>*,
+.column-margin-large>* {
+	margin: calc(var(--space) * 1);
+}
+
+.cmx,
+.column-margin-extra {}
+
+.cmx>*,
+.column-margin-extra>* {
+	margin: calc(var(--space) * 2);
+}
+
+.fm {
+	/*流动间隔，1级，较宽*/
+	margin: calc(var(--space) / -2);
+}
+
+.fm>* {
+	margin: calc(var(--space) / 2);
+}
+
+.fm.box-f2>* {
+	flex-basis: calc(50% - var(--space));
+}
+
+.fm.box-f3>* {
+	flex-basis: calc(33.333% - var(--space) * 2);
+}
+
+.fm.box-f4>* {
+	flex-basis: calc(25% - var(--space) * 3);
+}
+
+.fm.box-f5>* {
+	flex-basis: calc(20% - var(--space) * 4);
+}
+
+.fms {
+	/*流动间隔，2级，较窄*/
+	margin: calc(var(--space) / -4);
+}
+
+.fms>* {
+	margin: calc(var(--space) / 4);
+}
+
+.fms.box-f2>* {
+	flex-basis: calc(50% - var(--space) / 2);
+}
+
+.fms.box-f3>* {
+	flex-basis: calc(33.333% - var(--space) / 2);
+}
+
+.fms.box-f4>* {
+	flex-basis: calc(25% - var(--space) / 2);
+}
+
+.fms.box-f5>* {
+	flex-basis: calc(20% - var(--space) / 2);
+}
+
+.fmm {
+	/*流动间隔，3级，1px*/
+	margin: -1px;
+}
+
+.fmm>* {
+	margin: 1px;
+}
+
+.fmm.box-f2>* {
+	flex-basis: calc(50% - 2);
+}
+
+.fmm.box-f3>* {
+	flex-basis: calc(33.333% - 2);
+}
+
+.fmm.box-f4>* {
+	flex-basis: calc(25% - 2);
+}
+
+.fmm.box-f5>* {
+	flex-basis: calc(20% - 2);
+}
+
+/*
+填充空间
+*/
+
+.p0 {
+	padding: 0;
+}
+
+.p1 {
+	padding: 1px;
+}
+
+.pa,
+.padding-auto {
+	padding: auto;
+}
+
+.ps,
+.padding-small {
+	padding: calc(var(--space) / 2);
+}
+
+.pm,
+.padding-medium {
+	padding: var(--space);
+}
+
+.pl,
+.padding-large {
+	padding: calc(var(--space) * 2);
+}
+
+.px,
+.padding-extra-large {
+	padding: calc(var(--space) * 4);
+}
+
+/*滚动条*/
+
+.s,
+.scroll {
+	overflow: auto !important;
+	overflow: overlay !important;
+}
+
+.sx,
+.scroll-x {
+	overflow-x: auto !important;
+	overflow-x: overlay !important;
+	overflow-y: hidden !important;
+}
+
+.sy,
+.scroll-y {
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+	overflow-y: overlay !important;
+}
+
+.s,
+.sx,
+.sy {
+	/* FireFox 滚动条样式*/
+	scrollbar-width: 0.375rem;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+	/*scrollbar-track-color: transparent;
+  -ms-scrollbar-track-color: transparent;*/
+}
+
+.s::-webkit-scrollbar,
+.sx::-webkit-scrollbar,
+.sy::-webkit-scrollbar {
+	width: 0.375rem;
+	height: 0.375rem;
+}
+
+.s::-webkit-scrollbar-track,
+.sx::-webkit-scrollbar-track,
+.sy::-webkit-scrollbar-track {
+	display: none;
+}
+
+.s::-webkit-scrollbar-thumb,
+.sx::-webkit-scrollbar-thumb,
+.sy::-webkit-scrollbar-thumb {
+	/*border-radius: 0.375rem;*/
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.s::-webkit-scrollbar-corner,
+.sx::-webkit-scrollbar-corner,
+.sy::-webkit-scrollbar-corner {
+	display: none;
+}
+
+/*文本对齐*/
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/*图像*/
+
+.p16 {
+	width: 1rem;
+	height: 1rem;
+}
+
+.p24 {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.p32 {
+	width: 2rem;
+	height: 2rem;
+}
+
+.p40 {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.p48 {
+	width: 3rem;
+	height: 3rem;
+}
+
+.p56 {
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.p64 {
+	width: 4rem;
+	height: 4rem;
+}
+
+.p84 {
+	width: 5.25rem;
+	height: 5.25rem;
+}
+
+/*隐藏*/
+
+.hide {
+	display: none;
+	visibility: hidden;
+}
