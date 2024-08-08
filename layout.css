@@ -724,44 +724,44 @@
 
 /*横向布局间隔*/
 
-.hm0,
-.horizontal-margin-0 {
+.hm0>*,
+.horizontal-margin-0>* {
 	margin-left: 0;
 	margin-right: 0;
 }
 
-.hm1,
-.horizontal-margin-1 {
+.hm1>*,
+.horizontal-margin-1>* {
 	margin-left: 1px;
 	margin-right: 1px;
 }
 
-.hma,
-.horizontal-margin-auto {
+.hma>*,
+.horizontal-margin-auto>* {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.hms,
-.horizontal-margin-small {
+.hms>*,
+.horizontal-margin-small>* {
 	margin-left: calc(var(--space) / 2);
 	margin-right: calc(var(--space) / 2);
 }
 
-.hmm,
-.horizontal-margin-medium {
+.hmm>*,
+.horizontal-margin-medium>* {
 	margin-left: var(--space);
 	margin-right: var(--space);
 }
 
-.hml,
-.horizontal-margin-large {
+.hml>*,
+.horizontal-margin-large>* {
 	margin-left: calc(var(--space) * 2);
 	margin-right: calc(var(--space) * 2);
 }
 
-.hmx,
-.horizontal-margin-extra {
+.hmx>*,
+.horizontal-margin-extra>* {
 	margin-left: calc(var(--space) * 4);
 	margin-right: calc(var(--space) * 4);
 }
@@ -802,44 +802,44 @@
 
 /*纵向间隔*/
 
-.vm0,
-.vertical-margin-0 {
+.vm0>*,
+.vertical-margin-0>* {
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-.vm1,
-.vertical-margin-1 {
+.vm1>*,
+.vertical-margin-1>* {
 	margin-top: 1px;
 	margin-bottom: 1px;
 }
 
-.vma,
-.vertical-margin-auto {
+.vma>*,
+.vertical-margin-auto>* {
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
-.vms,
-.vertical-margin-small {
+.vms>*,
+.vertical-margin-small>* {
 	margin-top: calc(var(--space) / 2);
 	margin-bottom: calc(var(--space) / 2);
 }
 
-.vmm,
-.vertical-margin-medium {
+.vmm>*,
+.vertical-margin-medium>* {
 	margin-top: var(--space);
 	margin-bottom: var(--space);
 }
 
-.vml,
-.vertical-margin-large {
+.vml>*,
+.vertical-margin-large>* {
 	margin-top: calc(var(--space) * 2);
 	margin-bottom: calc(var(--space) * 2);
 }
 
-.vmx,
-.vertical-margin-extra {
+.vmx>*,
+.vertical-margin-extra>* {
 	margin-top: calc(var(--space) * 4);
 	margin-bottom: calc(var(--space) * 4);
 }
@@ -1057,6 +1057,8 @@
 .text-right {
 	text-align: right;
 }
+
+.text-truncate {}
 
 /*图像*/
 

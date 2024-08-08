@@ -1,0 +1,97 @@
+/*
+<form>
+	<fieldset>
+		<legend></legend>
+		<label></label>
+		<input type="button" />
+		<input type="checkbox" />
+		<input type="color" />
+		<input type="date" />
+		<input type="datetime" />
+		<input type="datetime-local" />
+		<input type="email" />
+		<input type="file" />
+		<input type="hidden" />
+		<input type="image" />
+		<input type="month" />
+		<input type="number" />
+		<input type="password" />
+		<input type="radio" />
+		<input type="range" />
+		<input type="reset" />
+		<input type="search" />
+		<input type="submit" />
+		<input type="tel" />
+		<input type="text" />
+		<input type="time" />
+		<input type="url" />
+		<input type="week" />
+		<textarea></textarea>
+		<select>
+			<optgroup label="Swedish Cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+			</optgroup>
+		</select>
+		<button></button>
+	</fieldset>
+	<input list="browsers">
+	<datalist id="browsers">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome">
+		<option value="Opera">
+		<option value="Safari">
+	</datalist>
+</form>
+*/
+:root {
+	/*圆角*/
+	--radius: 5px;
+	/*边框*/
+	--border: #e0e0e0;
+}
+
+form {}
+
+legend {
+	border-radius: var(--radius);
+	padding: 0.5rem;
+}
+
+fieldset {
+	border-radius: var(--radius);
+	border-color: var(--border);
+	border-style: solid;
+	border-width: 1px;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+
+	background-color: white;
+	background-clip: padding-box;
+	border-color: var(--border);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: var(--radius);
+
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 0;
+	border-color: #86b7fe;
+	box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}

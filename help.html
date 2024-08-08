@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="base.css" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<link rel="stylesheet" type="text/css" href="color.css" />
+		<link rel="stylesheet" type="text/css" href="layout.css" />
+		<title></title>
+	</head>
+	<body>
+		<article class="ma">
+			<h1>文档</h1>
+			<section>
+				<p>6级标题，HTML标签 h1 h2 h3 h4 h5 h6</p>
+				<h1>一级标题 h1</h1>
+				<h2>二级标题 h2</h2>
+				<h3>三级标题 h3</h3>
+				<h4>四级标题 h4</h4>
+				<h5>五级标题 h5</h5>
+				<h6>六级标题 h6</h6>
+			</section>
+			<hr />
+			<section>
+				<p>6级文本，样式类 t1 t2 t3 t4 t5 t6</p>
+				<p class="t1">一级文本 .t1</p>
+				<p class="t2">二级文本 .t2</h2>
+				<p class="t3">三级文本 .t3</p>
+				<p class="t4">四级文本 .t4</p>
+				<p class="t5">五级文本 .t5</p>
+				<p class="t6">六级文本 .t6</p>
+			</section>
+		</article>
+		<article class="ma">
+			<h1>格式</h1>
+			<p>
+				<abbr title="超文本标记语言(Hyper Text Markup Language)">HTML</abbr>5格式化标签的样式优化。
+			</p>
+			<p>
+				文本修饰：
+				<b>加粗文本</b>，
+				<em>强调文本</em>，
+				<strong>强壮文本</strong>，
+				<u>下划线</u>，
+				<s>删除线文本</s>，
+				<del>删除文本</del>，
+				<ins>插入文本</ins>，
+				<i>斜体文本</i>，
+				<mark>标记文本</mark>，
+				<small>小文本</small>，
+				<q>引用</q>，
+				<cite>引用</cite>
+			</p>
+			<p>
+				语义修饰：
+				键盘文本
+				<kbd>Cmd</kbd>，
+				<kbd>Ctrl</kbd>+<kbd>S</kbd>，
+				<samp>计算机样本</samp>，
+				<code>print("Hello World");</code>，
+				<sub>下标</sub>，
+				<sup>上标</sup>，
+				时间文本<time>9:00</time>，
+
+			</p>
+			<p>
+				状态修饰：
+				度量<meter value="0.6">60%</meter>
+				进度<progress value="22" max="100"></progress>
+			</p>
+			<p>
+				文字注音：
+				<ruby>
+					汉<rt>Han</rt>
+					<rp>(Han)</rp>
+					字<rt>zi</rt>
+					<rp>(zi)</rp>
+				</ruby>
+			</p>
+			<p>代码块</p>
+			<pre><code>print("Hello World");</code></pre>
+			<p>引用块</p>
+			<blockquote>
+				<p>Life is what happens when you're busy making other plans.</p>
+				<footer>— John Lennon</footer>
+			</blockquote>
+			<p>地址块</p>
+			<address>
+				作者：<a href="mailto:simon.zx@qq.com">张希</a><br>
+				网站：<a href="http://www.joyzl.com" target="_blank">www.joyzl.com</a><br>
+				地址：重庆市渝中区
+			</address>
+		</article>
+		<article class="ma">
+			<h1>颜色</h1>
+			<p>
+				定义基础颜色和状态颜色
+			</p>
+
+			<h2>状态颜色</h2>
+			<p>
+				着重颜色表示不同状态和主次。
+				<mark class="primary">主要 primary</mark>
+				<mark class="secondary">次要 secondary</mark>
+				<mark class="success">成功 success</mark>
+				<mark class="danger">危险 danger</mark>
+				<mark class="warning">警告 warning</mark>
+				<mark class="information">信息 information</mark>
+				<mark class="light">亮 light</mark>
+				<mark class="dark">暗 dark</mark>
+			</p>
+			<div class="pm vmm">
+				<div class="primary pm">主要 primary</div>
+				<div class="secondary pm">次要 secondary</div>
+				<div class="success pm">成功 success</div>
+				<div class="danger pm">危险 danger</div>
+				<div class="warning pm">警告 warning</div>
+				<div class="information pm">信息 information</div>
+				<div class="light pm">亮 light</div>
+				<div class="dark pm">暗 dark</div>
+			</div>
+			<p>
+				轻量颜色表示不同状态和主次。
+				<mark class="pale-primary">主要 primary</mark>
+				<mark class="pale-secondary">次要 secondary</mark>
+				<mark class="pale-success">成功 success</mark>
+				<mark class="pale-danger">危险 danger</mark>
+				<mark class="pale-warning">警告 warning</mark>
+				<mark class="pale-information">信息 information</mark>
+				<mark class="pale-light">亮 light</mark>
+				<mark class="pale-dark">暗 dark</mark>
+			</p>
+			<div class="pm vmm">
+				<div class="pale-primary pm">主要 primary</div>
+				<div class="pale-secondary pm">次要 secondary</div>
+				<div class="pale-success pm">成功 success</div>
+				<div class="pale-danger pm">危险 danger</div>
+				<div class="pale-warning pm">警告 warning</div>
+				<div class="pale-information pm">信息 information</div>
+				<div class="pale-light pm">亮 light</div>
+				<div class="pale-dark pm">暗 dark</div>
+			</div>
+		</article>
+		<article class="ma">
+			<form>
+				<fieldset>
+					<legend>控件</legend>
+					<div>
+						<label>按钮：</label>
+						<input type="button" value="普通按钮" />
+					</div>
+					<div>
+						<label>多选：</label>
+						<input type="checkbox" value="A" />
+						<input type="checkbox" value="B" />
+						<input type="checkbox" value="C" />
+					</div>
+					<div>
+						<label>颜色：</label>
+						<input type="color" />
+					</div>
+					<div>
+						<label>日期：</label>
+						<input type="date" />
+					</div>
+					<div>
+						<label>日期时间：</label>
+						<input type="datetime" />
+					</div>
+					<div>
+						<label>本地日期：</label>
+						<input type="datetime-local" />
+					</div>
+					<div>
+						<label>邮件地址：</label>
+						<input type="email" />
+					</div>
+					<div>
+						<label>文件：</label>
+						<input type="file" />
+					</div>
+					<div>
+						<label>隐藏：</label>
+						<input type="hidden" />
+					</div>
+					<div>
+						<label>图像：</label>
+						<input type="image" />
+					</div>
+					<div>
+						<label>月：</label>
+						<input type="month" />
+					</div>
+					<div>
+						<label>数值：</label>
+						<input type="number" />
+					</div>
+					<div>
+						<label>密码：</label>
+						<input type="password" />
+					</div>
+					<div>
+						<label>单选：</label>
+						<input type="radio" />
+					</div>
+					<div>
+						<label>范围：</label>
+						<input type="range" />
+					</div>
+					<div>
+						<label>重置：</label>
+						<input type="reset" />
+					</div>
+					<div>
+						<label>搜索：</label>
+						<input type="search" />
+					</div>
+					<div>
+						<label>提交：</label>
+						<input type="submit" />
+					</div>
+					<div>
+						<label>电话：</label>
+						<input type="tel" />
+					</div>
+					<div>
+						<label>文本：</label>
+						<input type="text" list="browsers" />
+						<datalist id="browsers">
+							<option value="Internet Explorer">
+							<option value="Firefox">
+							<option value="Chrome">
+							<option value="Opera">
+							<option value="Safari">
+						</datalist>
+					</div>
+					<div>
+						<label>时间：</label>
+						<input type="time" />
+					</div>
+					<div>
+						<label>链接：</label>
+						<input type="url" />
+					</div>
+					<div>
+						<label>周：</label>
+						<input type="week" />
+					</div>
+					<div>
+						<label>多行文本：</label>
+						<textarea></textarea>
+					</div>
+					<div>
+						<label>选择：</label>
+						<select>
+							<optgroup label="Swedish Cars">
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+							</optgroup>
+						</select>
+					</div>
+					<div>
+						<button>按钮</button>
+					</div>
+				</fieldset>
+			</form>
+		</article>
+	</body>
+</html>

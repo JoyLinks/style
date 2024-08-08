@@ -1,23 +1,25 @@
-/*3840*2160*/
+/*4K 3840*2160*/
 @media screen and (min-width:3840px) {
 	html {
 		font-size: 32px;
 	}
 }
 
-/*1920*1080*/
+/*2K 1920*1080*/
 @media screen and (min-width:1920px) {
 	html {
 		font-size: 16px;
 	}
 }
 
-@media screen and (min-width:1024px) {
+/*1280*1024*/
+@media screen and (min-width:1280px) {
 	html {
 		font-size: 14px;
 	}
 }
 
+/*1024*/
 @media screen and (max-width:1024px) {
 	html {
 		font-size: 12px;
@@ -26,11 +28,205 @@
 
 html,
 body {
-	width: 100%;
-	height: 100%;
 	padding: 0;
 	margin: 0;
 }
+
+/*文档标签*/
+
+header {}
+
+footer {}
+
+article {
+	padding: 2rem;
+	width: 62em;
+}
+
+section {}
+
+aside {}
+
+details {}
+
+dialog {}
+
+summary {}
+
+div {}
+
+p {
+	font-size: 1rem;
+	line-height: 2rem;
+	text-indent: 2em;
+}
+
+span {}
+
+/*格式标签*/
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-weight: 900;
+}
+
+.t6 {
+	font-size: 6rem;
+}
+
+.t5 {
+	font-size: 5rem;
+}
+
+.t4 {
+	font-size: 4rem;
+}
+
+.t3 {
+	font-size: 3rem;
+}
+
+.t2 {
+	font-size: 2rem;
+}
+
+.t1 {
+	font-size: 1rem;
+}
+
+.t1,
+.t2,
+.t3,
+.t4,
+.t5,
+.t6 {
+	font-weight: 200;
+}
+
+mark {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-radius: 0.3rem;
+	text-wrap: nowrap;
+}
+
+abbr {
+	text-decoration-thickness: 1px;
+}
+
+/*键入文本*/
+kbd {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-radius: 0.3rem;
+
+	background-color: black;
+	color: white;
+
+	font-family: sans-serif, monospace;
+}
+
+/*计算机样本*/
+samp {
+	font-family: sans-serif, monospace;
+}
+
+/*小文本*/
+small {
+	font-size: 0.85rem;
+}
+
+/*时间文本*/
+time {
+	font-family: sans-serif, monospace;
+}
+
+/*代码文本*/
+code {
+	font-family: sans-serif, monospace;
+}
+
+/*预制格式文本*/
+pre {
+	padding: 0.5rem;
+	color: white;
+	background-color: black;
+	border-radius: 0.3rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #3F4143;
+
+	max-height: 20em;
+	overflow: auto;
+}
+
+blockquote {
+	/*引用块*/
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	padding: 1rem;
+	background-color: beige;
+	border-radius: 0.3rem;
+}
+
+blockquote p {
+	text-indent: 0;
+	padding: 0;
+	margin: 0;
+}
+
+blockquote footer {
+	text-align: right;
+}
+
+address {
+	font-size: 0.9rem;
+	font-style: normal;
+	line-height: 1.5rem;
+
+	padding: 1rem;
+	background-color: lightgray;
+	border-radius: 0.3rem;
+}
+
+/*功能标签*/
 
 a {
 	/*链接默认手指*/
@@ -41,6 +237,10 @@ a {
 hr {
 	/*默认横线*/
 	border: none;
+	padding: 0;
+	margin: 0;
+	height: 1px;
+	background-color: black;
 }
 
 img {

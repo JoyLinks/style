@@ -1,0 +1,192 @@
+:root {
+	--body-fore: #212529;
+	--body-back: #fff;
+	--border: #dee2e6;
+
+	/*主要 Primary*/
+	--primary: #0d6efd;
+	--primary-rgb: 13, 110, 253;
+	--primary-text: #0a58ca;
+	--primary-pale: #cfe2ff;
+	--primary-mild: #9ec5fe;
+	/*次要 Secondary*/
+	--secondary: #6c757d;
+	--secondary-rgb: 108, 117, 125;
+	--secondary-text: #6c757d;
+	--secondary-pale: #f8f9fa;
+	--secondary-mild: #e9ecef;
+	/*成功 Success*/
+	--success: #198754;
+	--success-rgb: 25, 135, 84;
+	--success-text: #146c43;
+	--success-pale: #d1e7dd;
+	--success-mild: #a3cfbb;
+	/*危险 Danger*/
+	--danger: #dc3545;
+	--danger-rgb: 220, 53, 69;
+	--danger-text: #b02a37;
+	--danger-pale: #f8d7da;
+	--danger-mild: #f1aeb5;
+	/*警告 Warning*/
+	--warning: #ffc107;
+	--warning-rgb: 255, 193, 7;
+	--warning-text: #997404;
+	--warning-pale: #fff3cd;
+	--warning-mild: #ffe69c;
+	/*信息 information*/
+	--information: #0dcaf0;
+	--information-rgb: 13, 202, 240;
+	--information-text: #087990;
+	--information-pale: #cff4fc;
+	--information-mild: #9eeaf9;
+	/*亮 Light*/
+	--light: #f8f9fa;
+	--light-text: #6c757d;
+	--light-rgb: 248, 249, 250;
+	--light-pale: #fcfcfd;
+	--light-mild: #e9ecef;
+	/*暗 Dark*/
+	--dark: #212529;
+	--dark-rgb: 33, 37, 41;
+	--dark-text: #495057;
+	--dark-pale: #ced4da;
+	--dark-mild: #adb5bd;
+}
+
+/*常规状态*/
+
+.primary {
+	color: var(--light);
+	background-color: var(--primary);
+}
+
+.secondary {
+	color: var(--light);
+	background-color: var(--secondary);
+}
+
+.success {
+	color: var(--light);
+	background-color: var(--success);
+}
+
+.danger {
+	color: var(--light);
+	background-color: var(--danger);
+}
+
+.warning {
+	color: var(--dark);
+	background-color: var(--warning);
+}
+
+.information {
+	color: var(--dark);
+	background-color: var(--information);
+}
+
+.light {
+	color: var(--dark);
+	background-color: var(--light);
+}
+
+.dark {
+	color: var(--light);
+	background-color: var(--dark);
+}
+
+mark.primary,
+mark.secondary,
+mark.success,
+mark.danger,
+mark.warning,
+mark.information,
+mark.light,
+mark.dark {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-radius: var(--radius);
+}
+
+/*浅色状态*/
+
+.pale-primary {
+	color: var(--primary-text);
+	background-color: var(--primary-pale);
+	border-color: var(--primary-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-secondary {
+	color: var(--light-text);
+	background-color: var(--secondary-pale);
+	border-color: var(--secondary-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-success {
+	color: var(--success-text);
+	background-color: var(--success-pale);
+	border-color: var(--success-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-danger {
+	color: var(--danger-text);
+	background-color: var(--danger-pale);
+	border-color: var(--danger-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-warning {
+	color: var(--warning-text);
+	background-color: var(--warning-pale);
+	border-color: var(--warning-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-information {
+	color: var(--information-text);
+	background-color: var(--information-pale);
+	border-color: var(--information-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-light {
+	color: var(--light-text);
+	background-color: var(--light-pale);
+	border-color: var(--light-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pale-dark {
+	color: var(--dark-text);
+	background-color: var(--dark-pale);
+	border-color: var(--dark-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+mark.pale-primary,
+mark.pale-secondary,
+mark.pale-success,
+mark.pale-danger,
+mark.pale-warning,
+mark.pale-information,
+mark.pale-light,
+mark.pale-dark {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-radius: var(--radius);
+}
