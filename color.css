@@ -5,49 +5,49 @@
 
 	/*主要 Primary*/
 	--primary: #0d6efd;
-	--primary-rgb: 13, 110, 253;
+	--primary-rgba: rgba(13, 110, 253, 0.62);
 	--primary-text: #0a58ca;
 	--primary-pale: #cfe2ff;
 	--primary-mild: #9ec5fe;
 	/*次要 Secondary*/
 	--secondary: #6c757d;
-	--secondary-rgb: 108, 117, 125;
+	--secondary-rgba: rgba(108, 117, 125, 0.62);
 	--secondary-text: #6c757d;
 	--secondary-pale: #f8f9fa;
 	--secondary-mild: #e9ecef;
 	/*成功 Success*/
 	--success: #198754;
-	--success-rgb: 25, 135, 84;
+	--success-rgba: rgba(25, 135, 84, 0.62);
 	--success-text: #146c43;
 	--success-pale: #d1e7dd;
 	--success-mild: #a3cfbb;
 	/*危险 Danger*/
 	--danger: #dc3545;
-	--danger-rgb: 220, 53, 69;
+	--danger-rgba: rgba(220, 53, 69, 0.62);
 	--danger-text: #b02a37;
 	--danger-pale: #f8d7da;
 	--danger-mild: #f1aeb5;
 	/*警告 Warning*/
 	--warning: #ffc107;
-	--warning-rgb: 255, 193, 7;
+	--warning-rgba: rgba(255, 193, 7, 0.62);
 	--warning-text: #997404;
 	--warning-pale: #fff3cd;
 	--warning-mild: #ffe69c;
 	/*信息 information*/
 	--information: #0dcaf0;
-	--information-rgb: 13, 202, 240;
+	--information-rgba: rgba(13, 202, 240, 0.62);
 	--information-text: #087990;
 	--information-pale: #cff4fc;
 	--information-mild: #9eeaf9;
 	/*亮 Light*/
 	--light: #f8f9fa;
 	--light-text: #6c757d;
-	--light-rgb: 248, 249, 250;
+	--light-rgba: rgba(248, 249, 250, 0.62);
 	--light-pale: #fcfcfd;
 	--light-mild: #e9ecef;
 	/*暗 Dark*/
 	--dark: #212529;
-	--dark-rgb: 33, 37, 41;
+	--dark-rgba: rgba(33, 37, 41, 0.62);
 	--dark-text: #495057;
 	--dark-pale: #ced4da;
 	--dark-mild: #adb5bd;
@@ -95,6 +95,11 @@
 	background-color: var(--dark);
 }
 
+.none {
+	color: transparent;
+	background-color: transparent;
+}
+
 mark.primary,
 mark.secondary,
 mark.success,
@@ -112,6 +117,7 @@ mark.dark {
 
 /*浅色状态*/
 
+.pale.primary,
 .pale-primary {
 	color: var(--primary-text);
 	background-color: var(--primary-pale);
@@ -120,6 +126,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.secondary,
 .pale-secondary {
 	color: var(--light-text);
 	background-color: var(--secondary-pale);
@@ -128,6 +135,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.success,
 .pale-success {
 	color: var(--success-text);
 	background-color: var(--success-pale);
@@ -136,6 +144,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.danger,
 .pale-danger {
 	color: var(--danger-text);
 	background-color: var(--danger-pale);
@@ -144,6 +153,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.warning,
 .pale-warning {
 	color: var(--warning-text);
 	background-color: var(--warning-pale);
@@ -152,6 +162,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.information,
 .pale-information {
 	color: var(--information-text);
 	background-color: var(--information-pale);
@@ -160,6 +171,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.light,
 .pale-light {
 	color: var(--light-text);
 	background-color: var(--light-pale);
@@ -168,6 +180,7 @@ mark.dark {
 	border-width: 1px;
 }
 
+.pale.dark,
 .pale-dark {
 	color: var(--dark-text);
 	background-color: var(--dark-pale);
@@ -189,4 +202,104 @@ mark.pale-dark {
 	padding-left: 0.4rem;
 	padding-right: 0.4rem;
 	border-radius: var(--radius);
+}
+
+/*半透明状态*/
+
+.alpha.primary,
+.alpha-primary {
+	color: var(--light);
+	background-color: var(--primary-rgba);
+}
+
+.alpha.secondary,
+.alpha-secondary {
+	color: var(--light);
+	background-color: var(--secondary-rgba);
+}
+
+.alpha.success,
+.alpha-success {
+	color: var(--light);
+	background-color: var(--success-rgba);
+}
+
+.alpha.danger,
+.alpha-danger {
+	color: var(--light);
+	background-color: var(--danger-rgba);
+}
+
+.alpha.warning,
+.alpha-warning {
+	color: var(--dark);
+	background-color: var(--warning-rgba);
+}
+
+.alpha.information,
+.alpha-information {
+	color: var(--dark);
+	background-color: var(--information-rgba);
+}
+
+.alpha.light,
+.alpha-light {
+	color: var(--dark);
+	background-color: var(--light-rgba);
+}
+
+.alpha.dark,
+.alpha-dark {
+	color: var(--light);
+	background-color: var(--dark-rgba);
+}
+
+.blur {
+	/*模糊背景*/
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	-moz-backdrop-filter: blur(16px);
+	-ms-backdrop-filter: blur(16px);
+}
+
+/*闪烁状态*/
+
+@keyframes warning {
+
+	0%,
+	from {
+		color: var(--warning);
+		background-color: transparent;
+	}
+
+	100%,
+	to {
+		color: var(--dark);
+		background-color: var(--warning);
+	}
+}
+
+.flash.warning,
+.flash-warning {
+	animation: warning alternate 0.6s infinite;
+}
+
+@keyframes danger {
+
+	0%,
+	from {
+		color: var(--danger);
+		background-color: transparent;
+	}
+
+	100%,
+	to {
+		color: var(--light);
+		background-color: var(--danger);
+	}
+}
+
+.flash.danger,
+.flash-danger {
+	animation: danger alternate 0.6s infinite;
 }
