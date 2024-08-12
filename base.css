@@ -100,24 +100,32 @@ h6 {
 	font-weight: 900;
 }
 
-.t6 {
+.t8 {
 	font-size: 6rem;
 }
 
-.t5 {
-	font-size: 5rem;
-}
-
-.t4 {
+.t7 {
 	font-size: 4rem;
 }
 
-.t3 {
+.t6 {
+	font-size: 3.5rem;
+}
+
+.t5 {
 	font-size: 3rem;
 }
 
-.t2 {
+.t4 {
+	font-size: 2.5rem;
+}
+
+.t3 {
 	font-size: 2rem;
+}
+
+.t2 {
+	font-size: 1.5rem;
 }
 
 .t1 {

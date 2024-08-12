@@ -1015,10 +1015,36 @@
 	padding: calc(var(--space) * 4);
 }
 
+/*圆角*/
+
+.r0 {
+	border-radius: 0;
+}
+
+.r1 {
+	border-radius: 1px;
+}
+
+.rs {
+	border-radius: calc(var(--space) / 4);
+}
+
+.rm {
+	border-radius: calc(var(--space) / 2);
+}
+
+.rl {
+	border-radius: calc(var(--space) * 1);
+}
+
+.rx {
+	border-radius: calc(var(--space) * 2);
+}
+
 /*滚动条*/
 
-.s,
-.scroll {
+.sa,
+.scroll-all {
 	overflow: auto !important;
 	overflow: overlay !important;
 }
@@ -1037,41 +1063,12 @@
 	overflow-y: overlay !important;
 }
 
-.s,
+.sa,
 .sx,
 .sy {
-	/* FireFox 滚动条样式*/
-	scrollbar-width: 0.375rem;
+	/* 滚动条样式*/
 	scrollbar-width: thin;
 	scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
-	/*scrollbar-track-color: transparent;
-  -ms-scrollbar-track-color: transparent;*/
-}
-
-.s::-webkit-scrollbar,
-.sx::-webkit-scrollbar,
-.sy::-webkit-scrollbar {
-	width: 0.375rem;
-	height: 0.375rem;
-}
-
-.s::-webkit-scrollbar-track,
-.sx::-webkit-scrollbar-track,
-.sy::-webkit-scrollbar-track {
-	display: none;
-}
-
-.s::-webkit-scrollbar-thumb,
-.sx::-webkit-scrollbar-thumb,
-.sy::-webkit-scrollbar-thumb {
-	/*border-radius: 0.375rem;*/
-	background-color: rgba(255, 255, 255, 0.2);
-}
-
-.s::-webkit-scrollbar-corner,
-.sx::-webkit-scrollbar-corner,
-.sy::-webkit-scrollbar-corner {
-	display: none;
 }
 
 /*文本对齐*/
