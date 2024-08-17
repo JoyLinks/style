@@ -262,6 +262,53 @@ mark.pale-dark {
 	-ms-backdrop-filter: blur(16px);
 }
 
+/*文本状态*/
+
+.text.primary,
+.text-primary {
+	color: var(--primary-text);
+}
+
+.text.secondary,
+.text-secondary {
+	color: var(--secondary-text);
+}
+
+.text.success,
+.text-success {
+	color: var(--success-text);
+}
+
+.text.danger,
+.text-danger {
+	color: var(--danger-text);
+}
+
+.text.warning,
+.text-warning {
+	color: var(--warning-text);
+}
+
+.text.information,
+.text-information {
+	color: var(--information-text);
+}
+
+.text.light,
+.text-light {
+	color: var(--light-text);
+}
+
+.text.dark,
+.text-dark {
+	color: var(--dark-text);
+}
+
+.text.none,
+.text-none {
+	color: transparent;
+}
+
 /*闪烁状态*/
 
 @keyframes warning {
