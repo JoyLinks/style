@@ -1,26 +1,26 @@
 /*4K 3840*2160*/
-@media screen and (min-width:3840px) {
+@media screen and (min-width:3840px) and (min-height:3840px) {
 	html {
 		font-size: 32px;
 	}
 }
 
 /*2K 1920*1080*/
-@media screen and (min-width:1920px) {
+@media screen and (min-width:1920px) and (min-height:1920px) {
 	html {
 		font-size: 16px;
 	}
 }
 
 /*1280*1024*/
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1280px) and (min-height:1280px) {
 	html {
 		font-size: 14px;
 	}
 }
 
 /*1024*/
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) and (max-height:1024px) {
 	html {
 		font-size: 12px;
 	}

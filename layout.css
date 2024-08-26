@@ -73,7 +73,7 @@
 	/*横向布局，横向增长*/
 	flex-grow: 100;
 	overflow: hidden;
-	width: 1%;
+	/*width: auto;*/
 }
 
 .h>hr,
@@ -147,7 +147,7 @@
 	/*纵向布局，纵向增长*/
 	flex-grow: 100;
 	overflow: hidden;
-	height: 1%;
+	/*height: auto;*/
 }
 
 .v>hr,
