@@ -267,6 +267,7 @@ mark.pale-dark {
 .text.primary,
 .text-primary {
 	color: var(--primary-text);
+	background-color: unset;
 }
 
 .text.secondary,
