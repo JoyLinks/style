@@ -22,9 +22,9 @@
 			</section>
 			<hr />
 			<section>
-				<p>6级文本，样式类 t1 t2 t3 t4 t5 t6</p>
+				<p>8级文本，样式类 t1 t2 t3 t4 t5 t6 t7 t8</p>
 				<div class="t1">一级文本 t1</div>
-				<div class="t2">二级文本 t2</div>
+				<div class="t2">二级文本 t2 (1 rem)</div>
 				<div class="t3">三级文本 t3</div>
 				<div class="t4">四级文本 t4</div>
 				<div class="t5">五级文本 t5</div>
@@ -33,66 +33,7 @@
 				<div class="t8">八级文本 t8</div>
 			</section>
 		</article>
-		<article class="ma" title="格式">
-			<h1>格式</h1>
-			<p>
-				<abbr title="超文本标记语言(Hyper Text Markup Language)">HTML</abbr>5格式化标签的样式优化。
-			</p>
-			<p>
-				文本修饰：
-				<b>加粗文本</b>，
-				<em>强调文本</em>，
-				<strong>强壮文本</strong>，
-				<u>下划线</u>，
-				<s>删除线文本</s>，
-				<del>删除文本</del>，
-				<ins>插入文本</ins>，
-				<i>斜体文本</i>，
-				<mark>标记文本</mark>，
-				<small>小文本</small>，
-				<q>引用</q>，
-				<cite>引用</cite>
-			</p>
-			<p>
-				语义修饰：
-				键盘文本
-				<kbd>Cmd</kbd>，
-				<kbd>Ctrl</kbd>+<kbd>S</kbd>，
-				<samp>计算机样本</samp>，
-				<code>print("Hello World");</code>，
-				<sub>下标</sub>，
-				<sup>上标</sup>，
-				时间文本<time>9:00</time>，
 
-			</p>
-			<p>
-				状态修饰：
-				度量<meter value="0.6">60%</meter>
-				进度<progress value="22" max="100"></progress>
-			</p>
-			<p>
-				文字注音：
-				<ruby>
-					汉<rt>Han</rt>
-					<rp>(Han)</rp>
-					字<rt>zi</rt>
-					<rp>(zi)</rp>
-				</ruby>
-			</p>
-			<p>代码块</p>
-			<pre><code>print("Hello World");</code></pre>
-			<p>引用块</p>
-			<blockquote>
-				<p>Life is what happens when you're busy making other plans.</p>
-				<footer>— John Lennon</footer>
-			</blockquote>
-			<p>地址块</p>
-			<address>
-				作者：<a href="mailto:simon.zx@qq.com">张希</a><br>
-				网站：<a href="http://www.joyzl.com" target="_blank">www.joyzl.com</a><br>
-				地址：重庆市渝中区
-			</address>
-		</article>
 		<article class="ma" title="颜色">
 			<h1>颜色</h1>
 			<p>
@@ -174,127 +115,89 @@
 				<div class="flash-danger pm">危险 danger</div>
 				<div class="flash-warning pm">警告 warning</div>
 			</div>
+
+			<p>
+				文本颜色表示不同状态和主次。text
+				<span class="text primary">主要 primary</span>
+				<span class="text secondary">次要 secondary</span>
+				<span class="text success">成功 success</span>
+				<span class="text danger">危险 danger</span>
+				<span class="text warning">警告 warning</span>
+				<span class="text information">信息 information</span>
+				<span class="text light">亮 light</span>
+				<span class="text dark">暗 dark</span>
+			</p>
 		</article>
 		<article class="ma" title="表单">
+			<h1>表单</h1>
+			<p>
+				统一表单控件的基础样式。
+			</p>
 			<form>
-				<fieldset>
+				<fieldset style="font-size:0;">
 					<legend>控件</legend>
 					<div>
-						<label>按钮：</label>
-						<input type="button" value="普通按钮" />
+						<label>标签：</label>
+						<input type="month" value="2024-10" />
+						<input type="date" value="2024-10-30" />
+						<input type="datetime-local" value="2024-10-30 18:00" />
+						<input type="time" value="18:30" />
+						<input type="week" value="2024-W10" />
 					</div>
 					<div>
-						<label>多选：</label>
-						<input type="checkbox" value="A" />
-						<input type="checkbox" value="B" />
-						<input type="checkbox" value="C" />
-					</div>
-					<div>
-						<label>颜色：</label>
-						<input type="color" />
-					</div>
-					<div>
-						<label>日期：</label>
-						<input type="date" />
-					</div>
-					<div>
-						<label>日期时间：</label>
-						<input type="datetime" />
-					</div>
-					<div>
-						<label>本地日期：</label>
-						<input type="datetime-local" />
-					</div>
-					<div>
-						<label>邮件地址：</label>
-						<input type="email" />
-					</div>
-					<div>
-						<label>文件：</label>
-						<input type="file" />
-					</div>
-					<div>
-						<label>隐藏：</label>
-						<input type="hidden" />
-					</div>
-					<div>
-						<label>图像：</label>
-						<input type="image" />
-					</div>
-					<div>
-						<label>月：</label>
-						<input type="month" />
-					</div>
-					<div>
-						<label>数值：</label>
-						<input type="number" />
-					</div>
-					<div>
-						<label>密码：</label>
-						<input type="password" />
-					</div>
-					<div>
-						<label>单选：</label>
-						<input type="radio" />
-					</div>
-					<div>
-						<label>范围：</label>
-						<input type="range" />
-					</div>
-					<div>
-						<label>重置：</label>
-						<input type="reset" />
-					</div>
-					<div>
-						<label>搜索：</label>
-						<input type="search" />
-					</div>
-					<div>
-						<label>提交：</label>
-						<input type="submit" />
-					</div>
-					<div>
-						<label>电话：</label>
-						<input type="tel" />
-					</div>
-					<div>
-						<label>文本：</label>
-						<input type="text" list="browsers" />
+						<input type="email" value="simon@joyzl.com" />
+						<input type="password" value="administrator" />
+						<input type="search" value="关键字" />
+						<input type="tel" value="13883062895" />
+						<input type="url" value="http://www.joyzl.com" />
+						<input type="text" list="browsers" value="Chrome" />
 						<datalist id="browsers">
-							<option value="Internet Explorer">
+							<option value="Edge">
 							<option value="Firefox">
 							<option value="Chrome">
 							<option value="Opera">
 							<option value="Safari">
 						</datalist>
-					</div>
-					<div>
-						<label>时间：</label>
-						<input type="time" />
-					</div>
-					<div>
-						<label>链接：</label>
-						<input type="url" />
-					</div>
-					<div>
-						<label>周：</label>
-						<input type="week" />
-					</div>
-					<div>
-						<label>多行文本：</label>
-						<textarea></textarea>
-					</div>
-					<div>
-						<label>选择：</label>
+						<input type="number" value="1230" />
 						<select>
-							<optgroup label="Swedish Cars">
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
+							<optgroup label="域名">
+								<option value="joyzl.net">joyzl.net</option>
+								<option value="joyzl.com">joyzl.com</option>
 							</optgroup>
 						</select>
+						<input type="button" value="普通按钮" />
 					</div>
 					<div>
-						<button>按钮</button>
+						<label>多选：</label>
+						<input type="checkbox" name="check" value="A" />
+						<input type="checkbox" name="check" value="B" />
+						<input type="checkbox" name="check" value="C" />
+						<label>单选：</label>
+						<input type="radio" name="radio" />
+						<input type="radio" name="radio" />
+						<input type="range" />
+					</div>
+					<div>
+						<input type="color" value="#FF0000" />
+						<input type="file" />
+					</div>
+					<div>
+						<label>多行：</label>
+						<textarea rows="3">中华人民共和国</textarea>
+						<input type="image" src="china.png" class="w20" />
+						<a class="button">A</a>
+					</div>
+					<div>
+						<input class="primary" type="button" value="primary" />
+						<input class="secondary" type="button" value="secondary" />
+						<input class="success" type="button" value="success" />
+						<input class="danger" type="button" value="danger" />
+						<input class="warning" type="button" value="warning" />
+						<input class="information" type="button" value="information" />
+						<input class="light" type="button" value="light" />
+						<input class="dark" type="button" value="dark" />
+						<button type="reset">重置</button>
+						<button type="button">按钮</button>
 					</div>
 				</fieldset>
 			</form>
@@ -448,43 +351,99 @@
 					<div class="t pm information">1</div>
 					<div class="t pm information">2</div>
 					<div class="t pm information">3</div>
+				</div>
+				<div class="c3 secondary cm1">
+					<div class="t pm information">1</div>
+					<div class="t pm information">2</div>
+					<div class="t pm information">3</div>
 					<div class="t pm information">4</div>
 					<div class="t pm information">5</div>
-					<div class="t pm information">6</div>
 				</div>
-				<div class="c3 secondary cms">
+				<div class="c4 secondary cm1">
 					<div class="t pm information">1</div>
 					<div class="t pm information">2</div>
 					<div class="t pm information">3</div>
 					<div class="t pm information">4</div>
 					<div class="t pm information">5</div>
 					<div class="t pm information">6</div>
+					<div class="t pm information">7</div>
 				</div>
-				<div class="c4 secondary cmm">
+				<div class="c5 secondary cm1">
 					<div class="t pm information">1</div>
 					<div class="t pm information">2</div>
 					<div class="t pm information">3</div>
 					<div class="t pm information">4</div>
 					<div class="t pm information">5</div>
 					<div class="t pm information">6</div>
+					<div class="t pm information">7</div>
+					<div class="t pm information">8</div>
+					<div class="t pm information">9</div>
 				</div>
-				<div class="c5 secondary cml">
+				<div class="c6 secondary cm1">
 					<div class="t pm information">1</div>
 					<div class="t pm information">2</div>
 					<div class="t pm information">3</div>
 					<div class="t pm information">4</div>
 					<div class="t pm information">5</div>
 					<div class="t pm information">6</div>
-				</div>
-				<div class="c6 secondary cmx">
-					<div class="t pm information">1</div>
-					<div class="t pm information">2</div>
-					<div class="t pm information">3</div>
-					<div class="t pm information">4</div>
-					<div class="t pm information">5</div>
-					<div class="t pm information">6</div>
+					<div class="t pm information">7</div>
+					<div class="t pm information">8</div>
+					<div class="t pm information">9</div>
+					<div class="t pm information">A</div>
+					<div class="t pm information">B</div>
 				</div>
 			</section>
+
+			<h2>流动布局</h2>
+			<p>样式类 f2 f3 f4 f5 f6 别名 flow-2 flow-3 flow-4 flow-5 flow-6</p>
+			<section class="v vmm">
+				<div class="f2 secondary fm1">
+					<div class="t pm information">1</div>
+					<div class="t pm information">2</div>
+					<div class="t pm information">3</div>
+				</div>
+				<div class="f3 secondary fm1">
+					<div class="t pm information">1</div>
+					<div class="t pm information">2</div>
+					<div class="t pm information">3</div>
+					<div class="t pm information">4</div>
+					<div class="t pm information">5</div>
+				</div>
+				<div class="f4 secondary fm1">
+					<div class="t pm information">1</div>
+					<div class="t pm information">2</div>
+					<div class="t pm information">3</div>
+					<div class="t pm information">4</div>
+					<div class="t pm information">5</div>
+					<div class="t pm information">6</div>
+					<div class="t pm information">7</div>
+				</div>
+				<div class="f5 secondary fm1">
+					<div class="t pm information">1</div>
+					<div class="t pm information">2</div>
+					<div class="t pm information">3</div>
+					<div class="t pm information">4</div>
+					<div class="t pm information">5</div>
+					<div class="t pm information">6</div>
+					<div class="t pm information">7</div>
+					<div class="t pm information">8</div>
+					<div class="t pm information">9</div>
+				</div>
+				<div class="f6 secondary fm1">
+					<div class="t pm information">1</div>
+					<div class="t pm information">2</div>
+					<div class="t pm information">3</div>
+					<div class="t pm information">4</div>
+					<div class="t pm information">5</div>
+					<div class="t pm information">6</div>
+					<div class="t pm information">7</div>
+					<div class="t pm information">8</div>
+					<div class="t pm information">9</div>
+					<div class="t pm information">A</div>
+					<div class="t pm information">B</div>
+				</div>
+			</section>
+
 
 			<h2>分隔线</h2>
 			<p>横向布局和纵向布局中的 &lt;hr&gt; 将自动适配</p>
@@ -502,6 +461,16 @@
 					<div class="g pm">3</div>
 				</div>
 			</section>
+
+			<h2>间隔</h2>
+			<p>预定义间隔类 m0 m1 ms mm ml mx 别名 margin-0 margin-1 margin-small margin-medium margin-large margin-extra；将这些类应用于元素，将获得期望的外边距。</p>
+			<p>预定义横向布局间隔类 hm0 hm1 hms hmm hml hmx 别名 horizontal-margin-0 horizontal-margin-1 horizontal-margin-small horizontal-margin-medium horizontal-margin-large horizontal-margin-extra；将这些类应用于布局容器，将使子元素获得期望的外边距。</p>
+			<p>预定义纵向布局间隔类 vm0 vm1 vms vmm vml vmx 别名 vertical-margin-0 vertical-margin-1 vertical-margin-small vertical-margin-medium vertical-margin-large vertical-margin-extra；将这些类应用于布局容器，将使子元素获得期望的外边距。</p>
+			<p>预定义分栏布局间隔类 cm0 cm1 cms cmm cml cmx 别名 column-margin-0 column-margin-1 column-margin-small column-margin-medium column-margin-large column-margin-extra；将这些类应用于布局容器，将使子元素获得期望的外边距。</p>
+			<p>预定义流动布局间隔类 fm0 fm1 fms fmm fml fmx 别名 flow-margin-0 flow-margin-1 flow-margin-small flow-margin-medium flow-margin-large flow-margin-extra；将这些类应用于布局容器，将使子元素获得期望的外边距。</p>
+
+			<h2>填充</h2>
+			<p>预定义填充类 p0 p1 ps pm pl px 别名 padding-0 padding-1 padding-small padding-medium padding-large padding-extra；将这些类应用于元素，将获得期望的内边距。</p>
 
 			<h2>尺寸</h2>
 			<p>预定义宽度类 w0 w5 w10 w15 w20 w25 w30 w35 w40 w45 w50 w55 w60 w65 w70 w75 w80 w85 w90 w95 w100 w62 w38</p>
@@ -556,8 +525,68 @@
 				<div class="pm h62 information">h62</div>
 				<div class="pm h38 information">h38</div>
 			</section>
+			<p>在横向和纵向布局中，可通过应用增长类而填满剩余空间；样式类 g 别名 grow。</p>
 		</article>
 
+		<article class="ma" title="格式">
+			<h1>格式</h1>
+			<p>
+				<abbr title="超文本标记语言(Hyper Text Markup Language)">HTML</abbr>5格式化标签的样式优化。
+			</p>
+			<p>
+				文本修饰：
+				<b>加粗文本</b>，
+				<em>强调文本</em>，
+				<strong>强壮文本</strong>，
+				<u>下划线</u>，
+				<s>删除线文本</s>，
+				<del>删除文本</del>，
+				<ins>插入文本</ins>，
+				<i>斜体文本</i>，
+				<mark>标记文本</mark>，
+				<small>小文本</small>，
+				<q>引用</q>，
+				<cite>引用</cite>
+			</p>
+			<p>
+				语义修饰：
+				键盘文本
+				<kbd>Cmd</kbd>，
+				<kbd>Ctrl</kbd>+<kbd>S</kbd>，
+				<samp>计算机样本</samp>，
+				<code>print("Hello World");</code>，
+				<sub>下标</sub>，
+				<sup>上标</sup>，
+				时间文本<time>9:00</time>，
 
+			</p>
+			<p>
+				状态修饰：
+				度量<meter value="0.6">60%</meter>
+				进度<progress value="22" max="100"></progress>
+			</p>
+			<p>
+				文字注音：
+				<ruby>
+					汉<rt>Han</rt>
+					<rp>(Han)</rp>
+					字<rt>zi</rt>
+					<rp>(zi)</rp>
+				</ruby>
+			</p>
+			<p>代码块</p>
+			<pre><code>print("Hello World");</code></pre>
+			<p>引用块</p>
+			<blockquote>
+				<p>Life is what happens when you're busy making other plans.</p>
+				<footer>— John Lennon</footer>
+			</blockquote>
+			<p>地址块</p>
+			<address>
+				作者：<a href="mailto:simon.zx@qq.com">张希</a><br>
+				网站：<a href="http://www.joyzl.com" target="_blank">www.joyzl.com</a><br>
+				地址：重庆市渝中区
+			</address>
+		</article>
 	</body>
 </html>

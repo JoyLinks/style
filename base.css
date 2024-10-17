@@ -1,21 +1,21 @@
 /*4K 3840*2160*/
 @media screen and (max-width:3840px) and (max-height:2160px) {
 	html {
-		font-size: 36px;
+		font-size: 28px;
 	}
 }
 
 /*2K 1920*1080*/
 @media screen and (max-width:1920px) and (max-height:1080px) {
 	html {
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 
 /*1280*1024*/
 @media screen and (max-width:1280px) and (max-height:1024px) {
 	html {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
 
@@ -103,7 +103,7 @@ h6 {
 }
 
 .t8 {
-	font-size: 6rem;
+	font-size: 5rem;
 }
 
 .t7 {
@@ -111,27 +111,27 @@ h6 {
 }
 
 .t6 {
-	font-size: 3.5rem;
-}
-
-.t5 {
 	font-size: 3rem;
 }
 
-.t4 {
+.t5 {
 	font-size: 2.5rem;
 }
 
-.t3 {
+.t4 {
 	font-size: 2rem;
 }
 
-.t2 {
+.t3 {
 	font-size: 1.5rem;
 }
 
-.t1 {
+.t2 {
 	font-size: 1rem;
+}
+
+.t1 {
+	font-size: 0.6rem;
 }
 
 .t1,
@@ -169,6 +169,7 @@ mark {
 	padding-left: 0.4rem;
 	padding-right: 0.4rem;
 	text-wrap: nowrap;
+	border-radius: var(--radius);
 }
 
 abbr {

@@ -100,21 +100,6 @@
 	background-color: transparent;
 }
 
-mark.primary,
-mark.secondary,
-mark.success,
-mark.danger,
-mark.warning,
-mark.information,
-mark.light,
-mark.dark {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-	padding-left: 0.4rem;
-	padding-right: 0.4rem;
-	border-radius: var(--radius);
-}
-
 /*浅色状态*/
 
 .pale.primary,
@@ -189,21 +174,6 @@ mark.dark {
 	border-width: 1px;
 }
 
-mark.pale-primary,
-mark.pale-secondary,
-mark.pale-success,
-mark.pale-danger,
-mark.pale-warning,
-mark.pale-information,
-mark.pale-light,
-mark.pale-dark {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-	padding-left: 0.4rem;
-	padding-right: 0.4rem;
-	border-radius: var(--radius);
-}
-
 /*半透明状态*/
 
 .alpha.primary,
@@ -254,59 +224,60 @@ mark.pale-dark {
 	background-color: var(--dark-rgba);
 }
 
-.blur {
-	/*模糊背景*/
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	-moz-backdrop-filter: blur(16px);
-	-ms-backdrop-filter: blur(16px);
-}
-
 /*文本状态*/
 
 .text.primary,
 .text-primary {
 	color: var(--primary-text);
+	background-color: unset;
 }
 
 .text.secondary,
 .text-secondary {
 	color: var(--secondary-text);
+	background-color: unset;
 }
 
 .text.success,
 .text-success {
 	color: var(--success-text);
+	background-color: unset;
 }
 
 .text.danger,
 .text-danger {
 	color: var(--danger-text);
+	background-color: unset;
 }
 
 .text.warning,
 .text-warning {
 	color: var(--warning-text);
+	background-color: unset;
 }
 
 .text.information,
 .text-information {
 	color: var(--information-text);
+	background-color: unset;
 }
 
 .text.light,
 .text-light {
 	color: var(--light-text);
+	background-color: unset;
 }
 
 .text.dark,
 .text-dark {
 	color: var(--dark-text);
+	background-color: unset;
 }
 
 .text.none,
 .text-none {
 	color: transparent;
+	background-color: unset;
 }
 
 /*闪烁状态*/
@@ -349,4 +320,30 @@ mark.pale-dark {
 .flash.danger,
 .flash-danger {
 	animation: danger alternate 0.6s infinite;
+}
+
+/*模糊背景*/
+
+.blur8 {
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	-moz-backdrop-filter: blur(8px);
+	-ms-backdrop-filter: blur(8px);
+}
+
+.blur16 {
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	-moz-backdrop-filter: blur(16px);
+	-ms-backdrop-filter: blur(16px);
+}
+
+/*阴影*/
+
+.shadow0 {
+	box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .1);
+}
+
+.shadow5 {
+	box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, .1);
 }
