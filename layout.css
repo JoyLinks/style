@@ -188,14 +188,6 @@
 	bottom: 0;
 }
 
-.s>.cm,
-.s>.center-middle {
-	/*层叠布局，内容居中*/
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 .s>.t,
 .s>.top {
 	/*层叠布局，内容顶铺*/
@@ -204,104 +196,13 @@
 	right: 0;
 }
 
-.s>.tl,
-.s>.top-left,
-.s>.lt,
-.s>.left-top {
-	/*层叠布局，内容顶左*/
-	top: 0;
+.s>.c,
+.s>.center {
+	/*层叠布局，内容中铺*/
 	left: 0;
-}
-
-.s>.tc,
-.s>.top-center,
-.s>.ct,
-.s>.center-top {
-	/*层叠布局，内容顶中*/
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.s>.tr,
-.s>.top-right,
-.s>.rt,
-.s>.right-top {
-	/*层叠布局，内容顶右*/
-	top: 0;
 	right: 0;
-}
-
-.s>.l,
-.s>.left {
-	/*层叠布局，内容左铺*/
-	top: 0;
-	left: 0;
-	bottom: 0;
-}
-
-.s>.lt,
-.s>.left-top,
-.s>.tl,
-.s>.top-left {
-	/*层叠布局，内容左上*/
-	top: 0;
-	left: 0;
-}
-
-.s>.lc,
-.s>.left-center,
-.s>.cl,
-.s>.center-left {
-	/*层叠布局，内容左中*/
 	top: 50%;
-	left: 0;
 	transform: translateY(-50%);
-}
-
-.s>.lb,
-.s>.left-bottom,
-.s>.bl,
-.s>.bottom-left {
-	/*层叠布局，内容左下*/
-	left: 0;
-	bottom: 0;
-}
-
-.s>.r,
-.s>.right {
-	/*层叠布局，内容右铺*/
-	top: 0;
-	right: 0;
-	bottom: 0;
-}
-
-.s>.rt,
-.s>.right-top,
-.s>.tr,
-.s>.top-right {
-	/*层叠布局，内容右上*/
-	top: 0;
-	right: 0;
-}
-
-.s>.rc,
-.s>.right-center,
-.s>.cr,
-.s>.center-right {
-	/*层叠布局，内容右中*/
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-}
-
-.s>.rb,
-.s>.right-bottom,
-.s>.br,
-.s>.bottom-right {
-	/*层叠布局，内容右下*/
-	right: 0;
-	bottom: 0;
 }
 
 .s>.b,
@@ -312,33 +213,100 @@
 	bottom: 0;
 }
 
-.s>.bl,
-.s>.bottom-left,
-.s>.lb,
-.s>.left-bottom {
-	/*层叠布局，内容底左*/
+.s>.l,
+.s>.left {
+	/*层叠布局，内容左铺*/
+	top: 0;
 	left: 0;
 	bottom: 0;
 }
 
-.s>.bc,
-.s>.bottom-center,
+.s>.m,
+.s>.middle {
+	/*层叠布局，内容中铺*/
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.s>.r,
+.s>.right {
+	/*层叠布局，内容右铺*/
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.s>.lt,
+.s>.left-top {
+	/*层叠布局，内容左上*/
+	top: 0;
+	left: 0;
+}
+
+.s>.lm,
+.s>.left-middle {
+	/*层叠布局，内容左中*/
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.s>.lb,
+.s>.left-bottom {
+	/*层叠布局，内容左下*/
+	left: 0;
+	bottom: 0;
+}
+
+.s>.ct,
+.s>.center-top {
+	/*层叠布局，内容中上*/
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.s>.cm,
+.s>.center-middle {
+	/*层叠布局，内容居中*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .s>.cb,
 .s>.center-bottom {
-	/*层叠布局，内容底中*/
+	/*层叠布局，内容中下*/
 	left: 50%;
 	bottom: 0;
 	transform: translateX(-50%);
 }
 
-.s>.br,
-.s>.bottom-right,
+.s>.rt,
+.s>.right-top {
+	/*层叠布局，内容右上*/
+	top: 0;
+	right: 0;
+}
+
+.s>.rm,
+.s>.right-middle {
+	/*层叠布局，内容右中*/
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
 .s>.rb,
 .s>.right-bottom {
-	/*层叠布局，内容底右*/
+	/*层叠布局，内容右下*/
 	right: 0;
 	bottom: 0;
 }
+
+/*分栏布局*/
 
 .c0,
 .c2,
@@ -352,8 +320,6 @@
 .column-4,
 .column-5,
 .column-6 {}
-
-/*分栏布局*/
 
 .c0,
 .column0 {
@@ -990,25 +956,13 @@
 }
 
 .f2.fm1>:nth-child(2n),
-.flow-2.flow-margin-1>:nth-child(2n) {
-	margin-right: 0;
-}
-
+.flow-2.flow-margin-1>:nth-child(2n),
 .f3.fm1>:nth-child(3n),
-.flow-3.flow-margin-1>:nth-child(3n) {
-	margin-right: 0;
-}
-
+.flow-3.flow-margin-1>:nth-child(3n),
 .f4.fm1>:nth-child(4n),
-.flow-4.flow-margin-1>:nth-child(4n) {
-	margin-right: 0;
-}
-
+.flow-4.flow-margin-1>:nth-child(4n),
 .f5.fm1>:nth-child(5n),
-.flow-5.flow-margin-1>:nth-child(5n) {
-	margin-right: 0;
-}
-
+.flow-5.flow-margin-1>:nth-child(5n),
 .f6.fm1>:nth-child(6n),
 .flow-6.flow-margin-1>:nth-child(6n) {
 	margin-right: 0;
@@ -1051,25 +1005,13 @@
 }
 
 .f2.fms>:nth-child(2n),
-.flow-2.flow-margin-small>:nth-child(2n) {
-	margin-right: 0;
-}
-
+.flow-2.flow-margin-small>:nth-child(2n),
 .f3.fms>:nth-child(3n),
-.flow-3.flow-margin-small>:nth-child(3n) {
-	margin-right: 0;
-}
-
+.flow-3.flow-margin-small>:nth-child(3n),
 .f4.fms>:nth-child(4n),
-.flow-4.flow-margin-small>:nth-child(4n) {
-	margin-right: 0;
-}
-
+.flow-4.flow-margin-small>:nth-child(4n),
 .f5.fms>:nth-child(5n),
-.flow-5.flow-margin-small>:nth-child(5n) {
-	margin-right: 0;
-}
-
+.flow-5.flow-margin-small>:nth-child(5n),
 .f6.fms>:nth-child(6n),
 .flow-6.flow-margin-small>:nth-child(6n) {
 	margin-right: 0;
@@ -1112,25 +1054,13 @@
 }
 
 .f2.fmm>:nth-child(2n),
-.flow-2.flow-margin-medium>:nth-child(2n) {
-	margin-right: 0;
-}
-
+.flow-2.flow-margin-medium>:nth-child(2n),
 .f3.fmm>:nth-child(3n),
-.flow-3.flow-margin-medium>:nth-child(3n) {
-	margin-right: 0;
-}
-
+.flow-3.flow-margin-medium>:nth-child(3n),
 .f4.fmm>:nth-child(4n),
-.flow-4.flow-margin-medium>:nth-child(4n) {
-	margin-right: 0;
-}
-
+.flow-4.flow-margin-medium>:nth-child(4n),
 .f5.fmm>:nth-child(5n),
-.flow-5.flow-margin-medium>:nth-child(5n) {
-	margin-right: 0;
-}
-
+.flow-5.flow-margin-medium>:nth-child(5n),
 .f6.fmm>:nth-child(6n),
 .flow-6.flow-margin-medium>:nth-child(6n) {
 	margin-right: 0;
@@ -1173,25 +1103,13 @@
 }
 
 .f2.fml>:nth-child(2n),
-.flow-2.flow-margin-large>:nth-child(2n) {
-	margin-right: 0;
-}
-
+.flow-2.flow-margin-large>:nth-child(2n),
 .f3.fml>:nth-child(3n),
-.flow-3.flow-margin-large>:nth-child(3n) {
-	margin-right: 0;
-}
-
+.flow-3.flow-margin-large>:nth-child(3n),
 .f4.fml>:nth-child(4n),
-.flow-4.flow-margin-large>:nth-child(4n) {
-	margin-right: 0;
-}
-
+.flow-4.flow-margin-large>:nth-child(4n),
 .f5.fml>:nth-child(5n),
-.flow-5.flow-margin-large>:nth-child(5n) {
-	margin-right: 0;
-}
-
+.flow-5.flow-margin-large>:nth-child(5n),
 .f6.fml>:nth-child(6n),
 .flow-6.flow-margin-large>:nth-child(6n) {
 	margin-right: 0;
@@ -1234,28 +1152,30 @@
 }
 
 .f2.fmx>:nth-child(2n),
-.flow-2.flow-margin-extra>:nth-child(2n) {
-	margin-right: 0;
-}
-
+.flow-2.flow-margin-extra>:nth-child(2n),
 .f3.fmx>:nth-child(3n),
-.flow-3.flow-margin-extra>:nth-child(3n) {
-	margin-right: 0;
-}
-
+.flow-3.flow-margin-extra>:nth-child(3n),
 .f4.fmx>:nth-child(4n),
-.flow-4.flow-margin-extra>:nth-child(4n) {
-	margin-right: 0;
-}
-
+.flow-4.flow-margin-extra>:nth-child(4n),
 .f5.fmx>:nth-child(5n),
-.flow-5.flow-margin-extra>:nth-child(5n) {
-	margin-right: 0;
-}
-
+.flow-5.flow-margin-extra>:nth-child(5n),
 .f6.fmx>:nth-child(6n),
 .flow-6.flow-margin-extra>:nth-child(6n) {
 	margin-right: 0;
+}
+
+.f2>:nth-child(2n+1):nth-last-child(-n+2),
+.f2>:nth-child(2n+1):nth-last-child(-n+2)~*,
+.f3>:nth-child(3n+1):nth-last-child(-n+3),
+.f3>:nth-child(3n+1):nth-last-child(-n+3)~*,
+.f4>:nth-child(4n+1):nth-last-child(-n+4),
+.f4>:nth-child(4n+1):nth-last-child(-n+4)~*,
+.f5>:nth-child(5n+1):nth-last-child(-n+5),
+.f5>:nth-child(5n+1):nth-last-child(-n+5)~*,
+.f6>:nth-child(6n+1):nth-last-child(-n+6),
+.f6>:nth-child(6n+1):nth-last-child(-n+6)~* {
+	/* 重置最后一行 来自"永远不会太晚" */
+	margin-bottom: 0;
 }
 
 /*填充空间*/
@@ -1297,27 +1217,33 @@
 
 /*圆角*/
 
-.r0 {
+.br0,
+.border-radius-0 {
 	border-radius: 0;
 }
 
-.r1 {
+.br1,
+.border-radius-1 {
 	border-radius: 1px;
 }
 
-.rs {
+.brs,
+.border-radius-small {
 	border-radius: calc(var(--space) / 4);
 }
 
-.rm {
+.brm,
+.border-radius-medium {
 	border-radius: calc(var(--space) / 2);
 }
 
-.rl {
+.brl,
+.border-radius-large {
 	border-radius: calc(var(--space) * 1);
 }
 
-.rx {
+.brx,
+.border-radius-extra {
 	border-radius: calc(var(--space) * 2);
 }
 
@@ -1325,22 +1251,22 @@
 
 .sa,
 .scroll-all {
-	overflow: auto !important;
-	overflow: overlay !important;
+	overflow: auto;
+	overflow: overlay;
 }
 
 .sx,
 .scroll-x {
-	overflow-x: auto !important;
-	overflow-x: overlay !important;
-	overflow-y: hidden !important;
+	overflow-x: auto;
+	overflow-x: overlay;
+	overflow-y: hidden;
 }
 
 .sy,
 .scroll-y {
-	overflow-x: hidden !important;
-	overflow-y: auto !important;
-	overflow-y: overlay !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	overflow-y: overlay;
 }
 
 .sa,
@@ -1383,19 +1309,23 @@
 	white-space: nowrap;
 }
 
-.ts,
-.text-scroll {
+.ts>*,
+.text-scroll>* {
 	/*文本溢出滚动*/
 	overflow: hidden;
 	white-space: nowrap;
 	display: inline-block;
-	animation: scroll 5s linear infinite;
+	animation: scroll 10s linear infinite;
+	animation-delay: 1s;
+}
+
+.ts:hover>*,
+.text-scroll:hover>* {
+	animation-play-state: paused;
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
+	0% {}
 
 	100% {
 		transform: translateX(-100%);
@@ -1410,9 +1340,20 @@ img {
 
 img.q1,
 img.square1 {
-	/*square 32px*/
+	width: 1rem;
+	height: 1rem;
+}
+
+img.q2,
+img.square2 {
 	width: 2rem;
 	height: 2rem;
+}
+
+img.q3,
+img.square3 {
+	width: 3rem;
+	height: 3rem;
 }
 
 /*遮罩*/
