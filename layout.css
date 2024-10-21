@@ -90,7 +90,6 @@
 	width: var(--line);
 	height: 100%;
 	border: none;
-	padding: 0;
 }
 
 .v,
@@ -165,7 +164,6 @@
 	width: 100%;
 	height: var(--line);
 	border: none;
-	padding: 0;
 }
 
 .s,
