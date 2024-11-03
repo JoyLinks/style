@@ -5,6 +5,22 @@
 	--space: 1rem;
 }
 
+.unselect {
+	/*禁止选中文本*/
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+}
+
+.hide {
+	/*隐藏*/
+	display: none;
+	visibility: hidden;
+}
+
 /*
 布局
 横向：h(horizontal)
@@ -1381,18 +1397,81 @@ img.square3 {
 	transform: translate(-50%, -50%);
 }
 
-.unselect {
-	/*禁止选中文本*/
-	user-select: none;
-	-ms-user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-webkit-touch-callout: none;
-	-khtml-user-select: none;
+/*模糊背景*/
+
+.b8,
+.blur8 {
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	-moz-backdrop-filter: blur(8px);
+	-ms-backdrop-filter: blur(8px);
 }
 
-.hide {
-	/*隐藏*/
-	display: none;
-	visibility: hidden;
+.b16,
+.blur16 {
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	-moz-backdrop-filter: blur(16px);
+	-ms-backdrop-filter: blur(16px);
+}
+
+/*阴影*/
+
+.s0,
+.sb0,
+.ss0,
+.shadow-0,
+.shadow-blur-0,
+.shadow-sharp-0 {
+	box-shadow: 0;
+}
+
+.sb1,
+.shadow-blur-1 {
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sbs,
+.shadow-blur-small {
+	box-shadow: calc(var(--space) / 4) calc(var(--space) / 4) calc(var(--space) / 4) rgba(0, 0, 0, .1);
+}
+
+.sbm,
+.shadow-blur-medium {
+	box-shadow: calc(var(--space) / 2) calc(var(--space) / 2) calc(var(--space) / 2) rgba(0, 0, 0, .1);
+}
+
+.sbl,
+.shadow-blur-large {
+	box-shadow: var(--space) var(--space) var(--space) rgba(0, 0, 0, .1);
+}
+
+.sbx,
+.shadow-blur-extra {
+	box-shadow: calc(var(--space) * 2) calc(var(--space) * 2) calc(var(--space) * 2) rgba(0, 0, 0, .1);
+}
+
+.ss1,
+.shadow-sharp-1 {
+	box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sss,
+.shadow-sharp-small {
+	box-shadow: calc(var(--space) / 4) calc(var(--space) / 4) rgba(0, 0, 0, .1);
+}
+
+.ssm,
+.shadow-sharp-medium {
+	box-shadow: calc(var(--space) / 2) calc(var(--space) / 2) rgba(0, 0, 0, .1);
+}
+
+.ssl,
+.shadow-sharp-large {
+	box-shadow: var(--space) var(--space) rgba(0, 0, 0, .1);
+}
+
+.ssx,
+.shadow-sharp-extra {
+	box-shadow: calc(var(--space) * 2) calc(var(--space) * 2) rgba(0, 0, 0, .1);
 }

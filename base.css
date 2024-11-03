@@ -289,6 +289,8 @@ pre {
 	overflow: overlay;
 	scrollbar-width: thin;
 	scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+
+	tab-size: 4;
 }
 
 blockquote {

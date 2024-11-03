@@ -327,37 +327,3 @@
 	filter: invert(1);
 	backdrop-filter: invert(1);
 }
-
-/*模糊背景*/
-
-.b8,
-.blur8 {
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
-	-moz-backdrop-filter: blur(8px);
-	-ms-backdrop-filter: blur(8px);
-}
-
-.b16,
-.blur16 {
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	-moz-backdrop-filter: blur(16px);
-	-ms-backdrop-filter: blur(16px);
-}
-
-/*阴影*/
-.s0,
-.shadow0 {
-	box-shadow: 0;
-}
-
-.s1,
-.shadow1 {
-	box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .1);
-}
-
-.s2,
-.shadow2 {
-	box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .1);
-}
