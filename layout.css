@@ -5,6 +5,7 @@
 	--space: 1rem;
 }
 
+.us,
 .unselect {
 	/*禁止选中文本*/
 	user-select: none;
@@ -64,11 +65,6 @@
 	flex-wrap: nowrap;
 	flex-direction: row;
 	align-items: flex-end;
-}
-
-.w,
-.wrap {
-	flex-wrap: wrap;
 }
 
 .h>.g,
@@ -1266,7 +1262,7 @@
 /*滚动条*/
 
 .sa,
-.scroll-all {
+.scroll-auto {
 	overflow: auto;
 	overflow: overlay;
 }
@@ -1348,30 +1344,6 @@
 	}
 }
 
-/*图像*/
-
-img {
-	max-width: 100%;
-}
-
-img.q1,
-img.square1 {
-	width: 1rem;
-	height: 1rem;
-}
-
-img.q2,
-img.square2 {
-	width: 2rem;
-	height: 2rem;
-}
-
-img.q3,
-img.square3 {
-	width: 3rem;
-	height: 3rem;
-}
-
 /*遮罩*/
 
 .mask {
@@ -1383,11 +1355,6 @@ img.square3 {
 	z-index: 999999;
 	/*半透明*/
 	background-color: rgba(00, 00, 0, 0.5);
-	/*模糊*/
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	-moz-backdrop-filter: blur(16px);
-	-ms-backdrop-filter: blur(16px);
 }
 
 .mask>* {
@@ -1395,24 +1362,6 @@ img.square3 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-/*模糊背景*/
-
-.b8,
-.blur8 {
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
-	-moz-backdrop-filter: blur(8px);
-	-ms-backdrop-filter: blur(8px);
-}
-
-.b16,
-.blur16 {
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	-moz-backdrop-filter: blur(16px);
-	-ms-backdrop-filter: blur(16px);
 }
 
 /*阴影*/
@@ -1423,7 +1372,7 @@ img.square3 {
 .shadow-0,
 .shadow-blur-0,
 .shadow-sharp-0 {
-	box-shadow: 0;
+	box-shadow: none;
 }
 
 .sb1,
@@ -1474,4 +1423,31 @@ img.square3 {
 .ssx,
 .shadow-sharp-extra {
 	box-shadow: calc(var(--space) * 2) calc(var(--space) * 2) rgba(0, 0, 0, .1);
+}
+
+/*模糊背景*/
+
+.b0,
+.blur-0 {
+	backdrop-filter: none;
+}
+
+.bs,
+.blur-small {
+	backdrop-filter: blur(calc(var(--space) / 4));
+}
+
+.bm,
+.blur-medium {
+	backdrop-filter: blur(calc(var(--space) / 2));
+}
+
+.bm,
+.blur-large {
+	backdrop-filter: blur(var(--space));
+}
+
+.bm,
+.blur-extra {
+	backdrop-filter: blur(calc(var(--space) * 2));
 }
