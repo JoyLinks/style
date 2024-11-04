@@ -47,7 +47,7 @@
 */
 :root {
 	/*圆角*/
-	--radius: 3px;
+	--radius: 0.35rem;
 	/*边框*/
 	--border: #e0e0e0;
 }
@@ -55,11 +55,12 @@
 form {}
 
 legend {
+	font-size: 1rem;
 	border-radius: var(--radius);
-	padding: 0.5rem;
 }
 
 fieldset {
+	padding: 0.25rem 1rem 1rem 1rem;
 	border-radius: var(--radius);
 	border-color: var(--border);
 	border-style: solid;
@@ -67,24 +68,27 @@ fieldset {
 }
 
 label {
+	display: inline-block;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding: 0.25rem;
+	white-space: nowrap;
+	padding: 0.5rem 0 0.5rem 0;
+	margin: 0.25rem;
 }
 
 input,
 textarea,
 select,
-button {
+button,
+.button {
+	font-family: sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	padding-top: 0.2rem;
-	padding-bottom: 0.2rem;
+	box-sizing: content-box;
+	display: inline-block;
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
 	margin: 0.25rem;
 
-	background-color: white;
 	background-clip: padding-box;
 	border-color: var(--border);
 	border-style: solid;
@@ -94,10 +98,97 @@ button {
 	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+label,
+input,
+select,
+button {
+	vertical-align: middle;
+	height: 1.5rem;
+}
+
+button:not(:disabled),
+.button:not(:disabled),
+input[type=reset]:not(:disabled),
+input[type=button]:not(:disabled),
+input[type=submit]:not(:disabled) {
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	cursor: pointer;
+}
+
+textarea,
+input[type="image"] {
+	vertical-align: top;
+	padding: 0.5rem;
+	min-height: 1.5rem;
+	height: unset;
+}
+
+input[type="range"],
+input[type="radio"],
+input[type="checkbox"] {
+	height: unset;
+	padding: 0;
+}
+
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+button:focus,
+.button:focus {
 	outline: 0;
 	border-color: #86b7fe;
 	box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+button:not(:disabled):hover,
+.button:not(:disabled):hover,
+input[type=reset]:not(:disabled):hover,
+input[type=button]:not(:disabled):hover,
+input[type=submit]:not(:disabled):hover {
+	filter: brightness(90%);
+}
+
+/*按钮组合*/
+
+.group {
+	display: inline-flex;
+}
+
+.group label {
+	padding: 0.5rem;
+	border-color: var(--border);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: var(--radius);
+}
+
+.group>:first-child {
+	/* border-right-width: 0; */
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+}
+
+.group>:last-child {
+	border-left-width: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: 0;
+}
+
+.group>:not(:last-child):not(:first-child) {
+	/* border-right-width: 0; */
+	border-left-width: 0;
+	border-radius: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.group input:focus,
+.group button:focus,
+.group textarea:focus,
+.group select:focus,
+.group .button:focus {
+	/*避免焦点效果被遮盖*/
+	z-index: 8;
 }
