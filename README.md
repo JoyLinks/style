@@ -14,7 +14,7 @@ npm install @joyzl/style
 ```
 
 ``` javascript
-import 'style';
+import '@joyzl/style';
 ```
 
 ## 使用
