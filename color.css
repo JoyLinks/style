@@ -3,6 +3,13 @@
 	--body-back: #fff;
 	--border: #dee2e6;
 
+	/*选中 selected*/
+	--selected: #3367D1;
+	--selected-rgba: rgba(51, 103, 209, 0.62);
+	--selected-text: #FFFFFF;
+	--selected-pale: #3e7eff;
+	--selected-mild: #3367D1;
+
 	/*主要 Primary*/
 	--primary: #0d6efd;
 	--primary-rgba: rgba(13, 110, 253, 0.62);
@@ -55,41 +62,49 @@
 
 /*常规状态*/
 
+.pri,
 .primary {
 	color: var(--light);
 	background-color: var(--primary);
 }
 
+.sec,
 .secondary {
 	color: var(--light);
 	background-color: var(--secondary);
 }
 
+.suc,
 .success {
 	color: var(--light);
 	background-color: var(--success);
 }
 
+.dan,
 .danger {
 	color: var(--light);
 	background-color: var(--danger);
 }
 
+.war,
 .warning {
 	color: var(--dark);
 	background-color: var(--warning);
 }
 
+.inf,
 .information {
 	color: var(--dark);
 	background-color: var(--information);
 }
 
+.lig,
 .light {
 	color: var(--dark);
 	background-color: var(--light);
 }
 
+.dar,
 .dark {
 	color: var(--light);
 	background-color: var(--dark);
@@ -102,6 +117,7 @@
 
 /*浅色状态*/
 
+.pale.pri,
 .pale.primary,
 .pale-primary {
 	color: var(--primary-text);
@@ -111,6 +127,7 @@
 	border-width: 1px;
 }
 
+.pale.sec,
 .pale.secondary,
 .pale-secondary {
 	color: var(--light-text);
@@ -120,6 +137,7 @@
 	border-width: 1px;
 }
 
+.pale.suc,
 .pale.success,
 .pale-success {
 	color: var(--success-text);
@@ -129,6 +147,7 @@
 	border-width: 1px;
 }
 
+.pale.dan,
 .pale.danger,
 .pale-danger {
 	color: var(--danger-text);
@@ -138,6 +157,7 @@
 	border-width: 1px;
 }
 
+.pale.war,
 .pale.warning,
 .pale-warning {
 	color: var(--warning-text);
@@ -147,6 +167,7 @@
 	border-width: 1px;
 }
 
+.pale.inf,
 .pale.information,
 .pale-information {
 	color: var(--information-text);
@@ -156,6 +177,7 @@
 	border-width: 1px;
 }
 
+.pale.lig,
 .pale.light,
 .pale-light {
 	color: var(--light-text);
@@ -165,6 +187,7 @@
 	border-width: 1px;
 }
 
+.pale.dar,
 .pale.dark,
 .pale-dark {
 	color: var(--dark-text);
@@ -176,48 +199,56 @@
 
 /*半透明状态*/
 
+.alpha.pri,
 .alpha.primary,
 .alpha-primary {
 	color: var(--light);
 	background-color: var(--primary-rgba);
 }
 
+.alpha.sec,
 .alpha.secondary,
 .alpha-secondary {
 	color: var(--light);
 	background-color: var(--secondary-rgba);
 }
 
+.alpha.suc,
 .alpha.success,
 .alpha-success {
 	color: var(--light);
 	background-color: var(--success-rgba);
 }
 
+.alpha.dan,
 .alpha.danger,
 .alpha-danger {
 	color: var(--light);
 	background-color: var(--danger-rgba);
 }
 
+.alpha.war,
 .alpha.warning,
 .alpha-warning {
 	color: var(--dark);
 	background-color: var(--warning-rgba);
 }
 
+.alpha.inf,
 .alpha.information,
 .alpha-information {
 	color: var(--dark);
 	background-color: var(--information-rgba);
 }
 
+.alpha.lig,
 .alpha.light,
 .alpha-light {
 	color: var(--dark);
 	background-color: var(--light-rgba);
 }
 
+.alpha.dar,
 .alpha.dark,
 .alpha-dark {
 	color: var(--light);
@@ -226,48 +257,56 @@
 
 /*文本状态*/
 
+.text.pri,
 .text.primary,
 .text-primary {
 	color: var(--primary-text);
 	background-color: unset;
 }
 
+.text.sec,
 .text.secondary,
 .text-secondary {
 	color: var(--secondary-text);
 	background-color: unset;
 }
 
+.text.suc,
 .text.success,
 .text-success {
 	color: var(--success-text);
 	background-color: unset;
 }
 
+.text.dan,
 .text.danger,
 .text-danger {
 	color: var(--danger-text);
 	background-color: unset;
 }
 
+.text.war,
 .text.warning,
 .text-warning {
 	color: var(--warning-text);
 	background-color: unset;
 }
 
+.text.inf,
 .text.information,
 .text-information {
 	color: var(--information-text);
 	background-color: unset;
 }
 
+.text.lig,
 .text.light,
 .text-light {
 	color: var(--light-text);
 	background-color: unset;
 }
 
+.text.dar,
 .text.dark,
 .text-dark {
 	color: var(--dark-text);
@@ -297,6 +336,7 @@
 	}
 }
 
+.flash.war,
 .flash.warning,
 .flash-warning {
 	animation: warning alternate 0.6s infinite;
@@ -317,13 +357,53 @@
 	}
 }
 
+.flash.dan,
 .flash.danger,
 .flash-danger {
 	animation: danger alternate 0.6s infinite;
 }
 
+/*悬停*/
+
+.hov:hover,
+.hover:hover {
+	filter: brightness(90%);
+	cursor: pointer;
+}
+
+.pale.hov:hover,
+.pale.hover:hover {
+	filter: brightness(90%);
+	cursor: pointer;
+}
+
+.alpha.hov:hover,
+.alpha.hover:hover {
+	filter: brightness(90%);
+	cursor: pointer;
+}
+
+/*选中*/
+
+.sel,
 .selected {
-	/*选中反色*/
-	filter: invert(1);
-	backdrop-filter: invert(1);
+	color: var(--selected-text);
+	background-color: var(--selected);
+}
+
+.pale.sel,
+.pale.selected,
+.pale-selected {
+	color: var(--selected-text);
+	background-color: var(--selected-pale);
+	border-color: var(--selected-mild);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.alpha.sel,
+.alpha.selected,
+.alpha-selected {
+	color: var(--selected-text);
+	background-color: var(--selected-rgba);
 }

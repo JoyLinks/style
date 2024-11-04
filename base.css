@@ -151,80 +151,6 @@ h6 {
 	font-weight: 200;
 }
 
-/*表格*/
-
-table {
-	border-collapse: collapse;
-	table-layout: auto;
-	border-spacing: 0;
-}
-
-caption {
-	background-color: transparent;
-}
-
-thead {
-	box-sizing: border-box;
-}
-
-tbody {
-	white-space: nowrap;
-}
-
-tfoot {
-	box-sizing: border-box;
-}
-
-tr {
-	box-sizing: border-box;
-}
-
-th {
-	box-sizing: border-box;
-	padding: 0.5rem;
-}
-
-td {
-	box-sizing: border-box;
-	padding: 0.5rem;
-}
-
-table.sa,
-table.sx,
-table.sy {
-	display: block;
-}
-
-table.sa>thead,
-table.sx>thead,
-table.sy>thead {
-	position: sticky;
-	z-index: 1;
-	top: 0;
-}
-
-table.sa>tbody th,
-table.sx>tbody th,
-table.sy>tbody th {
-	position: sticky;
-	left: 0;
-}
-
-table.sa>thead th:first-child,
-table.sx>thead th:first-child,
-table.sy>thead th:first-child {
-	position: sticky;
-	z-index: 1;
-	left: 0;
-}
-
-table.sa>tfoot,
-table.sx>tfoot,
-table.sy>tfoot {
-	/* position: sticky;
-	bottom: 0; */
-}
-
 /*标记*/
 
 mark {
@@ -311,7 +237,7 @@ blockquote p {
 	margin: 0;
 }
 
-blockquote footer {
+blockquote cite {
 	text-align: right;
 }
 
@@ -346,4 +272,113 @@ hr {
 img {
 	/*修正img底部空白*/
 	vertical-align: middle;
+}
+
+/*表格*/
+
+table {
+	border-collapse: collapse;
+	table-layout: auto;
+	border-spacing: 0;
+}
+
+caption {
+	background-color: transparent;
+	padding: 0.5rem;
+}
+
+thead {
+	box-sizing: border-box;
+}
+
+tbody {
+	white-space: nowrap;
+}
+
+tfoot {
+	box-sizing: border-box;
+}
+
+tr {
+	box-sizing: border-box;
+}
+
+th {
+	box-sizing: border-box;
+	padding: 0.5rem;
+}
+
+td {
+	box-sizing: border-box;
+	padding: 0.5rem;
+}
+
+table.sb,
+table.spacing-both {
+	border-collapse: separate;
+	border-spacing: 1px 1px;
+}
+
+table.sh,
+table.spacing-horizontal {
+	border-collapse: separate;
+	border-spacing: 0 1px;
+}
+
+table.sv,
+table.spacing-vertical {
+	border-collapse: separate;
+	border-spacing: 1px 0;
+}
+
+table.sx,
+table.sy,
+table.sa,
+table.scroll-x,
+table.scroll-y,
+table.scroll-auto {
+	table-layout: fixed;
+	display: block;
+}
+
+table.sx>thead,
+table.sy>thead,
+table.sa>thead,
+table.scroll-x>thead,
+table.scroll-y>thead,
+table.scroll-auto>thead {
+	position: sticky;
+	z-index: 1;
+	top: 0;
+}
+
+table.sx>thead th:first-child,
+table.sy>thead th:first-child,
+table.sa>thead th:first-child,
+table.scroll-x>thead th:first-child,
+table.scroll-y>thead th:first-child,
+table.scroll-auto>thead th:first-child {
+	position: sticky;
+	z-index: 2;
+	left: 0;
+}
+
+table.sx>tbody th,
+table.sy>tbody th,
+table.sa>tbody th,
+table.scroll-x>tbody th,
+table.scroll-y>tbody th,
+table.scroll-auto>tbody th {
+	position: sticky;
+	left: 0;
+}
+
+table.sx>tfoot,
+table.sy>tfoot,
+table.sa>tfoot,
+table.scroll-x>tfoot,
+table.scroll-y>tfoot,
+table.scroll-auto>tfoot {
+	position: sticky;
+	bottom: 0;
 }
