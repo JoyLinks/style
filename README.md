@@ -18,6 +18,4 @@ import '@joyzl/style';
 ```
 
 ## 使用
-可参考在线手册 [joyzl style doc](http://style.joyzl.com/document.html)
-
-如果您已下载源代码，其中"help.html"文件即为使用说明，可直接双击打开浏览。
+参考在线手册 [joyzl style doc](http://style.joyzl.com/document.html)

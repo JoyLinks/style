@@ -230,8 +230,8 @@ code {
 pre {
 	color: white;
 	padding: 0.5rem;
-	background-color: black;
-	border-radius: 0.3rem;
+	background-color: #282c35;
+	border-radius: var(--radius);
 	border-style: solid;
 	border-width: 1px;
 	border-color: #3F4143;
@@ -243,6 +243,8 @@ pre {
 	scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 
 	tab-size: 4;
+	font-size: 0.9rem;
+	font-family: Source Code Pro, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
 blockquote {
