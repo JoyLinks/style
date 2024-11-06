@@ -1,6 +1,6 @@
 {
 	"name": "@joyzl/style",
-	"version": "1.2.6",
+	"version": "1.2.7",
 	"description": "CSS Style",
 	"main": "dist/joyzl-style.css",
 	"module": "index.js",

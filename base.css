@@ -63,6 +63,24 @@ p {
 	text-indent: 2em;
 }
 
+ul {
+	padding-inline-start: 3em;
+}
+
+ul li {
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+ol {
+	padding-inline-start: 3em;
+}
+
+ol li {
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
 span {}
 
 /*格式标签*/

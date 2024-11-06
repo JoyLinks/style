@@ -85,7 +85,6 @@
 .horizontal-bottom>.grow {
 	/*横向布局，横向增长*/
 	flex-grow: 100;
-	overflow: hidden;
 	/*以下修正超长问题*/
 	flex-basis: 1%;
 	width: 1%;
@@ -159,7 +158,6 @@
 .vertical-right>.grow {
 	/*纵向布局，纵向增长*/
 	flex-grow: 100;
-	overflow: hidden;
 	/*以下修正超长问题*/
 	flex-basis: 1%;
 	height: 1%;
