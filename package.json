@@ -23,7 +23,7 @@
 	"bugs": {
 		"url": "https://github.com/JoyLinks/style/issues"
 	},
-	"homepage": "https://github.com/JoyLinks/style#readme",
+	"homepage": "http://style.joyzl.net",
 	"devDependencies": {
 		"css-loader": "^7.1.2",
 		"css-minimizer-webpack-plugin": "^7.0.0",
