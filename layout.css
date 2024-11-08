@@ -1257,6 +1257,11 @@
 	border-radius: calc(var(--space) * 2);
 }
 
+.br,
+.border-radius {
+	border-radius: var(--radius);
+}
+
 /*滚动条*/
 
 .sa,
@@ -1309,28 +1314,37 @@
 	/*文本超出范围显示省略号*/
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden;
 	word-break: break-all;
+	overflow: hidden;
 }
 
 .tn,
 .text-nowrap {
 	/*文本禁止换行*/
 	white-space: nowrap;
+	overflow: clip;
+}
+
+.ts,
+.text-scroll {
+	/*文本溢出滚动，容器限制显示*/
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .ts>*,
 .text-scroll>* {
-	/*文本溢出滚动*/
-	overflow: hidden;
-	white-space: nowrap;
+	/*文本溢出滚动，动画*/
 	display: inline-block;
 	animation: scroll 10s linear infinite;
 	animation-delay: 1s;
 }
 
+.ts:hover,
 .ts:hover>*,
+.text-scroll:hover,
 .text-scroll:hover>* {
+	/*文本溢出滚动，停止*/
 	animation-play-state: paused;
 }
 
