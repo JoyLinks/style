@@ -190,7 +190,10 @@
 
 .s>.f,
 .s>.fill,
-.s>.full {
+.s>.full,
+.stack>.f,
+.stack>.fill,
+.stack>.full {
 	/*层叠布局，内容满铺*/
 	top: 0;
 	left: 0;
@@ -199,7 +202,9 @@
 }
 
 .s>.t,
-.s>.top {
+.s>.top,
+.stack>.t,
+.stack>.top {
 	/*层叠布局，内容顶铺*/
 	top: 0;
 	left: 0;
@@ -207,7 +212,9 @@
 }
 
 .s>.c,
-.s>.center {
+.s>.center,
+.stack>.c,
+.stack>.center {
 	/*层叠布局，内容中铺*/
 	left: 0;
 	right: 0;
@@ -216,7 +223,9 @@
 }
 
 .s>.b,
-.s>.bottom {
+.s>.bottom,
+.stack>.b,
+.stack>.bottom {
 	/*层叠布局，内容底铺*/
 	left: 0;
 	right: 0;
@@ -224,7 +233,9 @@
 }
 
 .s>.l,
-.s>.left {
+.s>.left,
+.stack>.l,
+.stack>.left {
 	/*层叠布局，内容左铺*/
 	top: 0;
 	left: 0;
@@ -232,7 +243,9 @@
 }
 
 .s>.m,
-.s>.middle {
+.s>.middle,
+.stack>.m,
+.stack>.middle {
 	/*层叠布局，内容中铺*/
 	top: 0;
 	bottom: 0;
@@ -241,7 +254,9 @@
 }
 
 .s>.r,
-.s>.right {
+.s>.right,
+.stack>.r,
+.stack>.right {
 	/*层叠布局，内容右铺*/
 	top: 0;
 	right: 0;
@@ -249,14 +264,18 @@
 }
 
 .s>.lt,
-.s>.left-top {
+.s>.left-top,
+.stack>.lt,
+.stack>.left-top {
 	/*层叠布局，内容左上*/
 	top: 0;
 	left: 0;
 }
 
 .s>.lm,
-.s>.left-middle {
+.s>.left-middle,
+.stack>.lm,
+.stack>.left-middle {
 	/*层叠布局，内容左中*/
 	top: 50%;
 	left: 0;
@@ -264,14 +283,18 @@
 }
 
 .s>.lb,
-.s>.left-bottom {
+.s>.left-bottom,
+.stack>.lb,
+.stack>.left-bottom {
 	/*层叠布局，内容左下*/
 	left: 0;
 	bottom: 0;
 }
 
 .s>.ct,
-.s>.center-top {
+.s>.center-top,
+.stack>.ct,
+.stack>.center-top {
 	/*层叠布局，内容中上*/
 	top: 0;
 	left: 50%;
@@ -279,7 +302,9 @@
 }
 
 .s>.cm,
-.s>.center-middle {
+.s>.center-middle,
+.stack>.cm,
+.stack>.center-middle {
 	/*层叠布局，内容居中*/
 	top: 50%;
 	left: 50%;
@@ -287,7 +312,9 @@
 }
 
 .s>.cb,
-.s>.center-bottom {
+.s>.center-bottom,
+.stack>.cb,
+.stack>.center-bottom {
 	/*层叠布局，内容中下*/
 	left: 50%;
 	bottom: 0;
@@ -295,14 +322,18 @@
 }
 
 .s>.rt,
-.s>.right-top {
+.s>.right-top,
+.stack>.rt,
+.stack>.right-top {
 	/*层叠布局，内容右上*/
 	top: 0;
 	right: 0;
 }
 
 .s>.rm,
-.s>.right-middle {
+.s>.right-middle,
+.stack>.rm,
+.stack>.right-middle {
 	/*层叠布局，内容右中*/
 	top: 50%;
 	right: 0;
@@ -310,7 +341,9 @@
 }
 
 .s>.rb,
-.s>.right-bottom {
+.s>.right-bottom,
+.stack>.rb,
+.stack>.right-bottom {
 	/*层叠布局，内容右下*/
 	right: 0;
 	bottom: 0;
